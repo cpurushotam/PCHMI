@@ -1,0 +1,48 @@
+Logger: Enroll: 21PlatformConfigUpgrade:e6ea5b9a8254fe70
+Logger: Enroll: 9WDSServer:87e22fa2ab01b6a6
+Logger[2023-12-07 07:33:40 PM IST] ID:87e22fa2ab01b6a6 S:1 D:WDS Server SockFd: 9
+Logger: Enroll: 10CommThread:2c87ac2696c549e8
+Logger: Enroll: 10CommThread:2c87ac2696c549e8
+Logger[2023-12-07 07:33:40 PM IST] ID:2c87ac2696c549e8 S:6 D:Comm 0 wait for start request.
+Logger: Enroll: 12ActuatorInit:faf8c5fad0233344
+Logger[Logger[2023-12-07 07:33:40 PM IST] ID:2c87ac2696c549e8 S:2 D:PeerInfo instance created.
+2023-12-07 07:33:40 PM IST] ID:2c87ac2696c549e8 S:6 D:Comm 1 wait for start request.
+Logger: Enroll: 12ActuatorInit:faf8c5fad0233344
+Logger[Logger: Enroll: 10CommThread:2023-12-07 07:33:40 PM IST] ID:2c87ac2696c549e82c87ac2696c549e8
+ S:2 D:PeerInfo instance created.
+Logger: Enroll: 10CommThread:2c87ac2696c549e8
+Logger[2023-12-07 07:33:40 PM IST] ID:2c87ac2696c549e8 S:6 D:Comm 2 wait for start request.
+Logger: Enroll: 12ActuatorInit:faf8c5fad0233344
+Logger[Logger[2023-12-07 07:33:40 PM IST] ID:2c87ac2696c549e8 S:2 D:PeerInfo instance created.
+2023-12-07 07:33:40 PM IST] ID:2c87ac2696c549e8 S:6 D:Comm 3 wait for start request.
+Logger: Enroll: 12ActuatorInit:faf8c5fad0233344
+Logger[2023-12-07 07:33:40 PM IST] ID:2c87ac2696c549e8 S:2 D:PeerInfo instance created.
+Logger[2023-12-07 07:34:05 PM IST] ID:87e22fa2ab01b6a6 S:7 D:Authentication successful
+Logger[2023-12-07 07:34:05 PM IST] ID:87e22fa2ab01b6a6 S:2 D:Triggered for Welder:0
+Logger[2023-12-07 07:34:05 PM IST] ID:2c87ac2696c549e8 S:2 D:Comm Thread 0 Triggered.
+Logger: Enroll: 14PlatformConfig:781b041e1b980063
+Logger: Enroll: 16WeldRecipeACEPRO:88ed68767647a2bd
+Logger: Enroll: 10SeekRecipe:5406ad92ed9e3367
+Logger: Enroll: 10TestRecipe:a2eddf6964b2a3af
+Logger: Enroll: 14HornScanRecipe:a82072015e5431b6
+Logger: Enroll: 4Comm:85a97ac03ffb769e
+Logger[2023-12-07 07:34:05 PM IST] ID:2c87ac2696c549e8 S:2 D:Comm instance created.
+Logger: Enroll: 18EncryptDecryptData:1f20a1d956ec17d6
+Client connected, performing TLS handshake...
+Verified server certificate successfully.
+
+Logger[2023-12-07 07:34:06 PM IST] ID:85a97ac03ffb769e S:2 D:Connected:192.168.1.100:8080
+Logger[2023-12-07 07:34:06 PM IST] ID:2c87ac2696c549e8 S:2 D:Comm started : 192.168.1.100
+Logger[2023-12-07 07:34:07 PM IST] ID:faf8c5fad0233344 S:2 D:Manual Actuator Configured
+Logger[2023-12-07 07:34:07 PM IST] ID:781b041e1b980063 S:1 D:Configuration Exchange Success
+Logger: Enroll: 18EncryptDecryptData:1f20a1d956ec17d6
+Client connected, performing TLS handshake...
+Verified server certificate successfully.
+
+Logger[2023-12-07 07:34:18 PM IST] ID:e6ea5b9a8254fe70 S:2 D:Secure communication started
+Logger[2023-12-07 07:34:18 PM IST] ID:e6ea5b9a8254fe70 S:2 D:51 Command sent successfully
+Logger[2023-12-07 07:34:18 PM IST] ID:e6ea5b9a8254fe70 S:2 D:Response received for 51 
+Logger[2023-12-07 07:34:18 PM IST] ID:e6ea5b9a8254fe70 S:7 D:Handled Response successfully for 51 
+Logger[2023-12-07 07:34:19 PM IST] ID:e6ea5b9a8254fe70 S:2 D:52 Command sent successfully
+Logger[2023-12-07 07:34:20 PM IST] ID:e6ea5b9a8254fe70 S:2 D:Response received for 52 
+Logger[2023-12-07 07:34:20 PM IST] ID:e6ea5b9a8254fe70 S:7 D:Handled Response successfully for 52 

@@ -1,0 +1,97 @@
+Logger: Enroll: 21PlatformConfigUpgrade:e6ea5b9a8254fe70
+Logger: Enroll: 9WDSServer:87e22fa2ab01b6a6
+Logger[2024-01-15 21:47:40] ID:87e22fa2ab01b6a6 S:1 D:WDS Server SockFd: 7
+Logger: Enroll: 10CommThread:2c87ac2696c549e8
+Logger: Enroll: 12BgCommThread:9a98a43d182dac54
+Logger: Enroll: 10CommThread:2c87ac2696c549e8
+Logger: Enroll: 12BgCommThread:9a98a43d182dac54
+BG_COMM_IDLE
+Logger[2024-01-15 21:47:40] ID:2c87ac2696c549e8 S:6 D:Comm 0 wait for start request.
+Logger: Enroll: 12ActuatorInit:faf8c5fad0233344
+Logger: Enroll: 32AmplitudeAndPressureStepsSupport:a4bb87ef87d5760f
+Logger: Enroll: 32AmplitudeAndPressureStepsSupport:a4bb87ef87d5760f
+Logger: Enroll: 15WeldModeSupport:5c93099751519905
+Logger: Enroll: 14StorageSupport:b4fee271eee427eb
+Logger: Enroll: 14StorageSupport:b4fee271eee427eb
+Logger: Enroll: 29PowerLevelSysFrequencySupport:36ce71e86ef05257
+Logger: Enroll: 29PowerLevelSysFrequencySupport:36ce71e86ef05257
+Logger[Logger: Enroll: 10CommThread:2c87ac2696c549e8
+Logger: Enroll: 12BgCommThread:9a98a43d182dac54
+2024-01-15 21:47:40] ID:2c87ac2696c549e8 S:2 D:PeerInfo instance created.
+BG_COMM_IDLE
+Logger[2024-01-15 21:47:40] ID:2c87ac2696c549e8 S:6 D:Comm 1 wait for start request.
+Logger: Enroll: 12ActuatorInit:faf8c5fad0233344
+Logger: Enroll: 32AmplitudeAndPressureStepsSupport:a4bb87ef87d5760f
+Logger: Enroll: 32AmplitudeAndPressureStepsSupport:a4bb87ef87d5760f
+Logger: Enroll: 15WeldModeSupport:5c93099751519905
+Logger: Enroll: 14StorageSupport:b4fee271eee427eb
+Logger: Enroll: 14StorageSupport:b4fee271eee427eb
+Logger: Enroll: 29PowerLevelSysFrequencySupport:36ce71e86ef05257
+Logger: Enroll: 29PowerLevelSysFrequencySupport:36ce71e86ef05257
+Logger: Enroll: 10CommThread:2c87ac2696c549e8
+Logger[Logger: Enroll: 12BgCommThread:9a98a43d182dac54
+2024-01-15 21:47:40] ID:2c87ac2696c549e8 S:2 D:PeerInfo instance created.
+BG_COMM_IDLE
+Logger[2024-01-15 21:47:40] ID:2c87ac2696c549e8 S:6 D:Comm 2 wait for start request.
+Logger: Enroll: 12ActuatorInit:faf8c5fad0233344
+Logger: Enroll: 32AmplitudeAndPressureStepsSupport:a4bb87ef87d5760f
+Logger: Enroll: 32AmplitudeAndPressureStepsSupport:a4bb87ef87d5760f
+Logger: Enroll: 15WeldModeSupport:5c93099751519905
+Logger: Enroll: 14StorageSupport:b4fee271eee427eb
+Logger: Enroll: 14StorageSupport:b4fee271eee427eb
+Logger: Enroll: 29PowerLevelSysFrequencySupport:36ce71e86ef05257
+Logger: Enroll: 29PowerLevelSysFrequencySupport:36ce71e86ef05257
+Logger[2024-01-15 21:47:40] ID:2c87ac2696c549e8 S:2 D:PeerInfo instance created.
+BG_COMM_IDLE
+Logger[2024-01-15 21:47:40] ID:2c87ac2696c549e8 S:6 D:Comm 3 wait for start request.
+Logger: Enroll: 12ActuatorInit:faf8c5fad0233344
+Logger: Enroll: 32AmplitudeAndPressureStepsSupport:a4bb87ef87d5760f
+Logger: Enroll: 32AmplitudeAndPressureStepsSupport:a4bb87ef87d5760f
+Logger: Enroll: 15WeldModeSupport:5c93099751519905
+Logger: Enroll: 14StorageSupport:b4fee271eee427eb
+Logger: Enroll: 14StorageSupport:b4fee271eee427eb
+Logger: Enroll: 29PowerLevelSysFrequencySupport:36ce71e86ef05257
+Logger: Enroll: 29PowerLevelSysFrequencySupport:36ce71e86ef05257
+Logger[2024-01-15 21:47:40] ID:2c87ac2696c549e8 S:2 D:PeerInfo instance created.
+Logger[2024-01-15 21:47:40] ID:a4bb87ef87d5760f S:1 D:GetSupportedAmplitudeStepsFromJSON Error
+Logger[2024-01-15 21:48:15] ID:87e22fa2ab01b6a6 S:7 D:Authentication successful
+Logger[2024-01-15 21:48:15] ID:87e22fa2ab01b6a6 S:2 D:Triggered for Welder:0
+Logger[2024-01-15 21:48:15] ID:2c87ac2696c549e8 S:2 D:Comm Thread 0 Triggered.
+Logger: Enroll: 14PlatformConfig:781b041e1b980063
+Logger: Enroll: 13WeldRecipeACE:1c2d9af3ea1074b0
+Logger: Enroll: 10SeekRecipe:5406ad92ed9e3367
+Logger: Enroll: 10TestRecipe:a2eddf6964b2a3af
+Logger: Enroll: 14HornScanRecipe:a82072015e5431b6
+Logger: Enroll: 13WeldResultACE:fecd092c02fd0449
+Logger: Enroll: 4Comm:85a97ac03ffb769e
+Logger[2024-01-15 21:48:15] ID:2c87ac2696c549e8 S:2 D:Comm instance created.
+Logger[2024-01-15 21:48:16] ID:85a97ac03ffb769e S:1 D:BIOError:N:No Self Cert
+Logger[2024-01-15 21:48:16] ID:85a97ac03ffb769e S:7 D:Non Recoverable BIOError 
+Logger[2024-01-15 21:48:16] ID:2c87ac2696c549e8 S:1 D:Error in starting communication
+Logger[2024-01-15 21:48:16] ID:2c87ac2696c549e8 S:2 D:Log Event generated...
+Logger[2024-01-15 21:48:17] ID:85a97ac03ffb769e S:1 D:BIOError:N:No Self Cert
+Logger[2024-01-15 21:48:17] ID:85a97ac03ffb769e S:7 D:Non Recoverable BIOError 
+Logger[2024-01-15 21:48:17] ID:2c87ac2696c549e8 S:1 D:Error in starting communication
+Logger[2024-01-15 21:48:17] ID:2c87ac2696c549e8 S:2 D:Log Event generated...
+Logger[2024-01-15 21:48:18] ID:85a97ac03ffb769e S:1 D:BIOError:N:No Self Cert
+Logger[2024-01-15 21:48:18] ID:85a97ac03ffb769e S:7 D:Non Recoverable BIOError 
+Logger[2024-01-15 21:48:18] ID:2c87ac2696c549e8 S:1 D:Error in starting communication
+Logger[2024-01-15 21:48:18] ID:2c87ac2696c549e8 S:2 D:Log Event generated...
+Logger[2024-01-15 21:48:19] ID:85a97ac03ffb769e S:1 D:BIOError:N:No Self Cert
+Logger[2024-01-15 21:48:19] ID:85a97ac03ffb769e S:7 D:Non Recoverable BIOError 
+Logger[2024-01-15 21:48:19] ID:2c87ac2696c549e8 S:1 D:Max count reached to start comm
+Logger[2024-01-15 21:48:19] ID:9a98a43d182dac54 S:1 D:Internal error: Invalid state
+Logger[2024-01-15 21:48:19] ID:87e22fa2ab01b6a6 S:1 D:Welder 192.168.1.100 blacklisted
+Logger[2024-01-15 21:48:19] ID:2c87ac2696c549e8 S:1 D:Error in starting communication
+Logger[2024-01-15 21:48:19] ID:2c87ac2696c549e8 S:1 D:Log Alarm generated...
+Logger[2024-01-15 21:48:19] ID:2c87ac2696c549e8 S:2 D:Removed entry from m_PeerMap
+Logger[2024-01-15 21:48:19] ID:2c87ac2696c549e8 S:6 D:Comm 0 wait for start request.
+Logger: Enroll: 12ActuatorInit:faf8c5fad0233344
+Logger: Enroll: 32AmplitudeAndPressureStepsSupport:a4bb87ef87d5760f
+Logger: Enroll: 32AmplitudeAndPressureStepsSupport:a4bb87ef87d5760f
+Logger: Enroll: 15WeldModeSupport:5c93099751519905
+Logger: Enroll: 14StorageSupport:b4fee271eee427eb
+Logger: Enroll: 14StorageSupport:b4fee271eee427eb
+Logger: Enroll: 29PowerLevelSysFrequencySupport:36ce71e86ef05257
+Logger: Enroll: 29PowerLevelSysFrequencySupport:36ce71e86ef05257
+Logger[2024-01-15 21:48:19] ID:2c87ac2696c549e8 S:2 D:PeerInfo instance created.

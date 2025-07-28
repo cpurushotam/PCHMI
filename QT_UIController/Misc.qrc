@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Misc/applicationFilter.sh</file>
+        <file>Misc/applicationUpgrading.sh</file>
+    </qresource>
+</RCC>

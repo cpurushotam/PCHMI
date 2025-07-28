@@ -1,0 +1,107 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/LeftMenu.svg</file>
+        <file>Images/RightMenu.svg</file>
+        <file>Images/Pen.svg</file>
+        <file>Images/AlarmNotification.svg</file>
+        <file>Images/Connected.svg</file>
+        <file>Images/menu_close_arrow.svg</file>
+        <file>Images/analytics.svg</file>
+        <file>Images/production.svg</file>
+        <file>Images/recipe.svg</file>
+        <file>Images/system.svg</file>
+        <file>Images/menu_close_arrow_rightMenu.svg</file>
+        <file>Images/actuatorSetup.svg</file>
+        <file>Images/diagnostics.svg</file>
+        <file>Images/importExport.svg</file>
+        <file>Images/Language2.svg</file>
+        <file>Images/Logout Icon.svg</file>
+        <file>Images/Power Off Icon.svg</file>
+        <file>Images/systemTimer.svg</file>
+        <file>Images/crossMark.svg</file>
+        <file>Images/Chevron.svg</file>
+        <file>Images/Trash.svg</file>
+        <file>Images/Info.svg</file>
+        <file>Images/Copy.svg</file>
+        <file>Images/Add.svg</file>
+        <file>Images/true.svg</file>
+        <file>Images/close.svg</file>
+        <file>Images/checkmark_green.svg</file>
+        <file>Images/drop-down-arrow.svg</file>
+        <file>Images/drop-down-arrow_blue.svg</file>
+        <file>Images/drop-up-arrow.svg</file>
+        <file>Images/loginbackground.png</file>
+        <file>Images/Password icon.svg</file>
+        <file>Images/edit.svg</file>
+        <file>Images/ViewIcon.svg</file>
+        <file>Images/Right Chevron.svg</file>
+        <file>Images/Table.svg</file>
+        <file>Images/Graph.svg</file>
+        <file>Images/Minimize.svg</file>
+        <file>Images/Maximize.svg</file>
+        <file>Images/buoy.svg</file>
+        <file>Images/part-icon.svg</file>
+        <file>Images/part_icon_white.png</file>
+        <file>Images/date-time.svg</file>
+        <file>Images/Time.png</file>
+        <file>Images/Exclaim-Circle-Red30.svg</file>
+        <file>Images/systemInformation.svg</file>
+        <file>Images/systemData.svg</file>
+        <file>Images/systemCalibration.png</file>
+        <file>Images/systemConfiguration.svg</file>
+        <file>Images/SystemCardBox.svg</file>
+        <file>Images/InformationSelectedTab.svg</file>
+        <file>Images/InformationRectangle.svg</file>
+        <file>Images/softwareUpgrade.svg</file>
+        <file>Images/informationSecondNav.svg</file>
+        <file>Images/copy.png</file>
+        <file>Images/save.png</file>
+        <file>Images/AddFolder.png</file>
+        <file>Images/Copy.png</file>
+        <file>Images/RecipeSymbol.png</file>
+        <file>Images/Save.png</file>
+        <file>Images/Edit.png</file>
+        <file>Images/Loading.png</file>
+        <file>Images/Energy_Icon_Blue.png</file>
+        <file>Images/Energy_Icon_Grey.png</file>
+        <file>Images/Groun Detect_Icon_Blue.png</file>
+        <file>Images/Groun Detect_Icon_Grey.png</file>
+        <file>Images/PeakPower_Icon_Blue.png</file>
+        <file>Images/PeakPower_Icon_Grey.png</file>
+        <file>Images/Time_icon_Blue.png</file>
+        <file>Images/Time_icon_Grey.png</file>
+        <file>Images/WelderDisconnection.png</file>
+        <file>Images/DiagnosticsTest.png</file>
+        <file>Images/DiagnosticsScan.png</file>
+        <file>Images/DiagnosticsSeek.png</file>
+        <file>Images/Alarm.png</file>
+        <file>Images/Alarm2.png</file>
+        <file>Images/Absolute_Distance_icon.svg</file>
+        <file>Images/Blue_Absolute_Distance_icon.svg</file>
+        <file>Images/Blue_Collapse_Distance_icon.svg</file>
+        <file>Images/Collapse_Distance_icon.svg</file>
+        <file>Images/Change_password_icon.svg</file>
+        <file>Images/Metric_icon.svg</file>
+        <file>Images/user_icon_white.svg</file>
+        <file>Images/User_IO.svg</file>
+        <file>Images/Pause.png</file>
+        <file>Images/Play.png</file>
+        <file>Images/Reset.png</file>
+        <file>Images/Counter.png</file>
+        <file>Images/Timer.png</file>
+        <file>Images/Locked_icon.png</file>
+        <file>Images/Readonly_icon.png</file>
+        <file>Images/Full_functional_icon.png</file>
+        <file>Images/Generate_Report_Icon.svg</file>
+        <file>Images/Icon_check.svg</file>
+        <file>Images/Icon_close.svg</file>
+ 		<file>Images/Icon_search.svg</file>
+        <file>Images/Absolute_Distance_icon.svg</file>
+        <file>Images/back_arrow_icon.svg</file>
+        <file>Images/extendArrow.svg</file>
+        <file>Images/Shrink_arrow_icon.svg</file>
+        <file>Images/Cycle_ok_icon.svg</file>
+        <file>Images/Suspect_icon.svg</file>
+        <file>Images/Reject_icon.svg</file>
+    </qresource>
+</RCC>
