@@ -1,0 +1,1652 @@
+{
+    "header": {},
+    "leftMenu": {
+        "tags": [
+            "MENU",
+            "RECIPES",
+            "PRODUCTION",
+            "ANALYTICS",
+            "SYSTEM",
+            "Select Welder",
+            "Welder",
+            "DASHBOARD"
+        ]
+    },
+    "rightMenu": {
+        "tags": [
+            "USER SETTING",
+            "Actuator Setup",
+            "Diagnostics",
+            "Import/ Export",
+            "Generate Report",
+            "Metric",
+            "  Change",
+            "Logout",
+            "Machine: ",
+            "Yes",
+            "No",
+            "CONFIRMATION",
+            "Are you sure want to logout?",
+            "Metric",
+            "Imperial",
+            "ADMIN",
+            "(Executive)",
+            "Date :",
+            "Date Format :",
+            "Time :",
+            "Time Format :",
+            "OK",
+            "Alert !",
+            "Date & Time Settings !",
+            "Unknown Error !",
+            "Entered Data Is Not Valid !",
+            "Logged in as ",
+            "Password"
+        ],
+        "selectLanguage": {
+            "tags": [
+                "Select Language",
+                "CANCEL",
+                "SAVE"
+            ]
+        },
+        "User Change Password": {
+            "tags": [
+                "CHANGE PASSWORD",
+                "Please enter below details to change password",
+                "Current Password",
+                "New Password",
+                "Confirm New Password",
+                "CANCEL",
+                "SAVE",
+                "Password reset successfully",
+                "New Password and Confirm New Password should be same",
+                "New Password or Confirm New Password is empty",
+                "Password must be at least 8 characters in length, including 1 uppercase letter, 1 lowercase letter, 1 numeric character, 1 special character",
+                "Password reset successfully",
+                "Password updated successfully",
+                "CONFIRMATION",
+                "Warning !",
+                ". Please login again"
+            ]
+        }
+    },
+    "middlePage": {
+        "Recipes": {
+            "menuName": "Recipes",
+            "tags": [
+                "Recipes",
+                "Sequences",
+                "New Recipe",
+                "New Sequence",
+                "Actions",
+                "PRODUCTION RUN",
+                "EDIT RECIPE",
+                "EDIT SEQUENCE",
+                "RESET CYCLE COUNT",
+                "SET AS ACTIVE",
+                "Cycle Count",
+                "Sequence Count",
+                "Maximum recipe count reached...!",
+                "Can not delete active recipe...!",
+                "Are you sure you want to delete the recipe?",
+                "Are you sure you want to reset the cycle count?",
+                "Do you want to override the recipe number ?",
+                "Recipe Ver",
+                "Validation In Progress...",
+		"Recipe Edit Failed..!",
+		"Active Recipe Failed..!",
+		"Alert"
+            ],
+            "LowerWeldModeValue": {
+                "tags": [
+                    "Time",
+                    "Energy",
+                    "Peak Power",
+                    "Scrub Time",
+                    "Absolute Distance",
+                    "Collapse Distance"
+                ]
+            },
+            "RecipesLab": {
+                "menuName": "Lab",
+                "RecipeSettings": {
+                    "menuName": "RECIPE SETTINGS",
+                    "tags": [
+                        "Actions",
+                        "New",
+                        "Save",
+                        "Copy",
+                        "Delete",
+                        "QUICK EDIT",
+                        "TIME",
+                        "ENERGY",
+                        "PEAK POWER",
+                        "ABSOLUTE DISTANCE",
+                        "COLLAPSE DISTANCE",
+                        "SCRUB TIME",
+                        "WELD AMPLITUDE",
+                        "HOLD TIME",
+                        "WELD PRESSURE",
+                        "DOWNSPEED",
+                        "FORCE RAMP TIME",
+                        "Maximum recipe count reached...!",
+                        "TRIGGER FORCE",
+                        "HOLD PRESSURE",
+                        "Energy Compensation",
+                        "Do you want to override recipe number ?",
+                        "Entered Values Outof Range, Restoring To Default..!"
+
+
+
+                    ],
+                    "RecipeWeldMode": {
+                        "menuName": "Weld Mode",
+                        "tags": [
+                            "TIME",
+                            "ENERGY",
+                            "PEAK POWER",
+                            "GROUND DETECT",
+                            "ABSOLUTE DISTANCE",
+                            "COLLAPSE DISTANCE",
+                            "RESET TO DEFAULT"
+                        ]
+                    },
+                    "RecipeWeldProcess": {
+                        "menuName": "Weld Process",
+                        "Pretrigger": {
+                            "menuName": "PRETRIGGER",
+                            "tags": [
+                                "PRETRIGGER",
+                                "PRETRIGGER DISTANCE",
+                                "PRETRIGGER AMPLITUDE",
+                                "PRETRIGGER TIME",
+                                "TIME",
+                                "DISTANCE",
+                                "AUTO",
+                                "PRETRIGGER START",
+                                "RESET TO DEFAULT"
+                            ]
+                        },
+                        "Afterburst": {
+                            "menuName": "AFTERBURST",
+                            "tags": [
+                                "AFTERBURST",
+                                "AFTERBURST TIME",
+                                "AFTERBURST DELAY",
+                                "AFTERBURST AMPLITUDE",
+                                "RESET TO DEFAULT"
+                            ]
+                        }
+                    },
+                    "ParametersAZ": {
+                        "menuName": "Parameters A-Z",
+                        "tags": [
+                            "AFTERBURST",
+                            "AFTERBURST TIME",
+                            "AFTERBURST DELAY",
+                            "AFTERBURST AMPLITUDE",
+                            "ENERGY BRAKING",
+                            "ENERGY BRAKE TIME",
+                            "ENERGY BRAKE AMPLITUDE",
+                            "EXTRA COOLING",
+                            "MAX TIMEOUT",
+                            "HOLD FORCE RAMP",
+                            "PRE WELD SEEK",
+                            "POST WELD SEEK",
+                            "PRETRIGGER",
+                            "PRETRIGGER DISTANCE",
+                            "PRETRIGGER AMPLITUDE",
+                            "PRETRIGGER TIME",
+                            "PRETRIGGER START",
+                            "TIME",
+                            "DISTANCE",
+                            "AUTO",
+                            "ACTUATOR CLEAR",
+                            "ACTUATOR SETTING",
+                            "RAPID TRAVERSE",
+                            "RAPID TRAVERSE DISTANCE",
+                            "TRIGGER LOST",
+                            "EXTERNAL AMPLITUDE",
+                            "ACTUATOR TIME",
+                            "ACTUATOR DISTANCE",
+                            "TRIGGER FORCE",
+                            "TRIGGER DISTANCE",
+                            "FORCE",
+                            "TRIGGER TYPE",
+                            "TIME SEEK ENABLE",
+                            "TIME SEEK PERIOD",
+                            "SCRUB AMPLITUDE",
+                            "min",
+                            "SETTING"
+                        ]
+                    },
+                    "Limits": {
+                        "menuName": "Limits",
+                        "Setup": {
+                            "menuName": "Setup"
+                        },
+                        "Control": {
+                            "menuName": "Control",
+                            "tags": [
+                                "CONTROL",
+                                "Turn settings on",
+                                "FREQUENCY LOW CUTOFF",
+                                "PEAK POWER CUTOFF",
+                                "FREQUENCY HIGH CUTOFF",
+                                "ABSOLUTE DISTANCE CUTOFF",
+                                "ENERGY CUTOFF",
+                                "COLLAPSE DISTANCE CUTOFF",
+                                "GROUND DETECT CUTOFF",
+                                "TIME CUTOFF",
+                                "Turn All Off"
+                            ]
+                        },
+                        "SuspectReject": {
+                            "menuName": "Suspect & Reject",
+                            "tags": [
+                                "GLOBAL SUSPECT",
+                                "GLOBAL REJECT",
+                                "TIME",
+                                "ENERGY",
+                                "PEAK POWER",
+                                "FREQUENCY",
+                                "ABSOLUTE DISTANCE",
+                                "COLLAPSE DISTANCE",
+                                "TRIGGER DISTANCE",
+                                "END WELD FORCE",
+                                "VELOCITY"
+                            ]
+                        },
+                        "EnergyCompensation": {
+                            "menuName": "EnergyCompensation",
+                            "tags": [
+                                "Energy Compensation Enabled",
+                                "Energy Compensation Minimum Value",
+                                "Energy Compensation Maximum Value"
+                            ]
+                        }
+                    },
+                    "StackRecipe": {
+                        "menuName": "Stack Recipe",
+                        "tags": [
+                            "DIGITAL TUNE",
+                            "END OF WELD STORE",
+                            "INTERNAL FREQ OFFSET",
+                            "FREQUENCY OFFSET",
+                            "ON",
+                            "OFF",
+                            "Internal",
+                            "External",
+                            "FREQUENCY LOW",
+                            "FREQUENCY HIGH",
+                            "WELD RAMP TIME",
+                            "START FREQUENCY",
+                            "MEMORY OFFSET",
+                            "PHASE LIMIT TIME",
+                            "PHASE LIMIT",
+                            "CONTROL MODE",
+                            "BLIND TIME WELD",
+                            "AMPLITUDE PROPORTIONAL GAIN",
+                            "AMPLITUDE INTEGRAL GAIN",
+                            "AMPLITUDE DERIVATIVE GAIN",
+                            "PHASE PROPORTIONAL GAIN",
+                            "PHASE INTEGRAL GAIN",
+                            "PHASE DERIVATIVE GAIN",
+                            "RESET TO DEFAULT",
+                            "CLEAR MEMORY"
+                        ]
+                    },
+                    "BatchSetting": {
+                        "menuName": "Batch Setting",
+                        "tags": [
+                            "BATCH SETUP",
+                            "COUNT WITH ALARMS",
+                            "BATCH COUNTER LIMIT",
+                            "BATCH COUNTER",
+                            "BATCH ID",
+                            "RESET BATCH COUNTER",
+                            "CANCEL",
+                            "DONE",
+                            "Are you sure want to Reset Batch Counter ?"
+                        ]
+                    }
+                },
+                "ResultView": {
+                    "menuName": "RESULT VIEW",
+                    "tags": [
+                        "Result",
+                        "Generate Report",
+                        "Choose Parameters"
+                    ]
+                },
+                "GraphSettings": {
+                    "menuName": "graphRightSetting",
+                    "tags": [
+                        "Left Axis",
+                        "Right Axis",
+                        "Auto Save Graph",
+                        "Auto Graph Refresh",
+                        "Auto Scale Y Axis",
+                        "Auto Scale Time Axis",
+                        "TWH Line",
+                        "Set Values",
+                        "Time",
+                        "SET AUTO SCALE Y AXIS VALUES",
+                        "SET AUTO SCALE TIME AXIS VALUES",
+                        "Sampling Interval"
+                    ]
+                },
+                "GraphCycleDetailList": {
+                    "menuName": "graphRightSetting",
+                    "tags": [
+                        "Search By Cycle No",
+                        "Selected Weld Cycle Already Marked",
+                        "Alert",
+                        "As A Reference Graph"
+                    ]
+                }
+            }
+        },
+        "Production": {
+            "menuName": "Production",
+            "tags": [
+                "Active Recipe",
+                "Total Cycle Time",
+                "Cycle Count",
+                "Peak Power",
+                "Batch Count",
+                "Parts Per Min",
+                "Cycles OK : ",
+                "Reject : ",
+                "Suspect : ",
+                "Yield Percentage : "
+            ]
+        },
+        "Analytics": {
+            "menuName": "Analytics",
+            "tags": [
+                "Results",
+                "Alarms",
+                "EDIT RECIPE",
+                "GENERATE REPORT"
+            ],
+            "Results": {
+                "graphView": {
+                    "tags": [
+                        "Cycle Number",
+                        "Save As A Golden Graph",
+                        "Cycle Details: ",
+                        "Recipe: ",
+                        "Recipe Version: ",
+                        "No Data To Display..!",
+                        "Rename",
+                        "Done",
+                        "Select Reference Graph",
+                        "Zoom chart"
+                    ],
+                    "graphRightSetting": {
+                        "tags": [
+                            "Left Axis",
+                            "Right Axis",
+                            "Auto Save Graph",
+                            "Auto Graph Refresh",
+                            "Auto Scale Y Axis",
+                            "Auto Scale Time Axis",
+                            "TWH Line",
+                            "Set Values",
+                            "Time",
+                            "SET AUTO SCALE Y AXIS VALUES",
+                            "SET AUTO SCALE TIME AXIS VALUES",
+                            "Sampling Interval",
+                            "ORG",
+                            "REF"
+                        ]
+                    },
+                    "graphHeaderSetting": {
+                        "tags": [
+                            "Left",
+                            "Right",
+                            "Axis"
+                        ]
+                    },
+                    "graphAxis": {
+                        "tags": [
+                            "Amplitude",
+                            "Power",
+                            "Frequency",
+                            "Phase",
+                            "Current",
+                            "Energy",
+                            "Force",
+                            "Abs Distance",
+                            "Col Distance",
+                            "Req Amplitude",
+                            "Velocity",
+                            "Time"
+                        ]
+                    },
+                    "graphCycleDetailsList": {
+                        "tags": [
+                            "Search By Cycle No",
+                            "Selected Weld Cycle Already Marked As A Reference Graph",
+                            "Alert"
+                        ]
+                    }
+                },
+                "recordsView": {
+                    "tags": [
+                        "Choose"
+                    ],
+                    "ChooseParameter": {
+                        "menuName": "CHOOSE PARAMETER",
+                        "tags": [
+                            "Recipe",
+                            "Recipe Version",
+                            "Date Time",
+                            "Stack Serial",
+                            "Cycle Counter",
+                            "Weld Mode",
+                            "Max Weld Force(N)",
+                            "Find Hold Force(N)",
+                            "Weld Absolute(mm)",
+                            "Tool Absolute(mm)",
+                            "Weld Collapse Dist",
+                            "Hold Collapse Dist",
+                            "Total Collapse Dist",
+                            "Trigger Distance(mm)",
+                            "Velocity(mm/s)"
+                        ]
+                    }
+                }
+            }
+        },
+        "System": {
+            "menuName": "System",
+            "tags": [
+                "Configuration",
+                "Data",
+                "Information",
+                "Service Count",
+                "Calibration"
+            ],
+            "Configuration": {
+                "menuName": "Configuration",
+                "General": {
+                    "menuName": "General",
+                    "tags": [
+                        "Welder Name",
+                        "Memory Full Action",
+                        "Key",
+                        "Authority Check",
+                        "Barcode Recall Recipe Prefix",
+                        "VERIFY",
+                        "CANCEL",
+                        "SAVE",
+                        "RESET TO DEFAULT",
+                        "Unit Display",
+                        "SI (Metric)",
+                        "SAE (Imperial)",
+                        "Part ID",
+                        "Clear Memory At Powerup",
+                        "Clear Memory With Reset ",
+                        "Key verified successfully",
+                        "Wrong Key Entered",
+                        "Confirmation",
+                        "Warning",
+                        "Parallel Weld Result Storage",
+                        "IP Address for Welder",
+                        "Power Up Option",
+                        "Welder name cannot be empty.",
+                        "Clamp On",
+                        "Use Unique Recipe Numbers",
+                        "Branson tab is now activated."
+                    ]
+                },
+                "User Management": {
+                    "menuName": "User Management",
+                    "tags": [
+                        "User ID",
+                        "Authority Level",
+                        "User Status",
+                        "Date/Time",
+                        "Action",
+                        "Edit User",
+                        "Password",
+                        "Delete User",
+                        "Are you sure you want to delete ?",
+                        "Confirmation",
+                        "Warning !"
+                    ],
+                    "User List": {
+                        "menuName": "User List",
+                        "tags": [
+                            "User ID",
+                            "User Level",
+                            "User Status",
+                            "User Name",
+                            "Password",
+                            "Confirm Password",
+                            "Enter User Name",
+                            "Enter Password",
+                            "Enter Confirm Password",
+                            "Last Login",
+                            "EXECUTIVE",
+                            "OPERATOR",
+                            "ENABLED",
+                            "DISABLED",
+                            "ADD USER",
+                            "MODIFY USER",
+                            "CANCEL",
+                            "SAVE"
+                        ]
+                        },
+                    "Global User Settings": {
+                        "menuName": "Global User Settings",
+                        "tags": [
+                            "Password Expiration",
+                            "Idle Time Logout",
+                            "day(s)",
+                            "min(s)",
+                            "RESET TO DEFAULT",
+                            "SAVE",
+                            "Lock Out Time",
+                            "OK",
+                            "CONFIRMATION",
+                            "Warning..!",
+                            "Global User Settings saved successfully",
+                            "Failed to save Global User Settings",
+                            "Global User Settings reset successfully",
+                            "Failed to reset Global User Settings",
+                            "AutoLogin",
+                            "Please select AutoLogin User Name",
+                            "Operator Level User Not Exist",
+                            "Authority check is disabled, please enable it"
+                        ]
+                        },
+                    "System Add User": {
+                        "menuName": "System Add User",
+                        "tags": [
+                            "Add User",
+                            "User ID",
+                            "Password",
+                            "Authority Level",
+                            "Status",
+                            "Enable",
+                            "Disable",
+                            "Enter Username",
+                            "Enter Password",
+                            "Enter Confirm Password",
+                            "Select",
+                            "Confirm Password",
+                            "Cancel",
+                            "Save",
+                            "Is Locked User",
+                            "Locked",
+                            "Unlocked",
+                            "Modify User",
+                            "Update",
+                            "Password and Confirm Password can not be same",
+                            "Password or Confirm Password is empty",
+                            "Password must be at least 8 characters in length, including 1 uppercase letter, 1 lowercase letter, 1 numeric character, 1 special character",
+                            "User Name is Empty",
+                            "Please Add Authority Level",
+                            "Confirmation",
+                            "Warning !"
+                        ]
+                        }
+                    },
+                "User I/O": {
+                    "menuName": "User I/O",
+                    "Digital I/O": {
+                        "menuName": "Digital I/O",
+                        "tags": [
+                            "DIGITAL INPUTS",
+                            "DIGITAL OUTPUTS",
+                            "RESET TO DEFAULT",
+                            "CANCEL",
+                            "SAVE",
+                            "Digital_In_1",
+                            "Digital_In_2",
+                            "Digital_In_3",
+                            "Digital_In_4",
+                            "Digital_In_5",
+                            "Digital_In_6",
+                            "Digital_In_7",
+                            "Digital_In_8",
+                            "Digital_In_9",
+                            "Digital_Out_1",
+                            "Digital_Out_2",
+                            "Digital_Out_3",
+                            "Digital_Out_4",
+                            "Digital_Out_5",
+                            "Digital_Out_6",
+                            "Digital_Out_7",
+                            "Digital_Out_8"
+                        ]
+                    },
+                    "Analog I/O": {
+                        "menuName": "Analog I/O",
+                        "tags": [
+                            "ANALOG INPUTS",
+                            "ANALOG OUTPUTS",
+                            "RESET TO DEFAULT",
+                            "CANCEL",
+                            "SAVE",
+                            "Analog_In_1",
+                            "Analog_In_2",
+                            "Analog_Out_1",
+                            "Analog_Out_2"
+                        ]
+                    },
+                "Industrial I/O": {
+                        "menuName": "Industrial I/O",
+                        "tags": [
+                            "CONTROL WORDS",
+                            "STATUS WORDS",
+                            "RESET TO DEFAULT",
+                            "CANCEL",
+                            "SAVE",
+                            "Control Word 1",
+                            "Control Word 2",
+                            "Status Word 1",
+                            "Status Word 2",
+                            "Control Word 3",
+                            "Status Word 3"
+                        ]
+                    }
+                },
+                "Network Config": {
+                    "menuName": "Network Config",
+                    "tags": [
+                        "Configuration - Communication :",
+                        "IP SETUP",
+                        "STATIC IP",
+                        "DHCP CLIENT",
+                        "IP Address",
+                        "Subnet Mask",
+                        "Default Gateway",
+                        "RESET TO DEFAULT",
+                        "CANCEL",
+                        "SAVE",
+                        "Enter Digit Only",
+                        "Confirmation",
+                        "Warning",
+                        "Please Make Sure All Text Inputs are Filled"
+                    ],
+                    "Network Config EthernetIP": {
+                        "menuName": "Network Config EthernetIP",
+                        "tags": [
+                            "Configuration - Communication :",
+                            "INDUSTRIAL ETHERNET",
+                            "STATIC IP",
+                            "DHCP CLIENT",
+                            "IP Address",
+                            "Subnet Mask",
+                            "Default Gateway",
+                            "Name Server",
+                            "Name Server2",
+                            "Domain Name",
+                            "RESET TO DEFAULT",
+                            "CANCEL",
+                            "SAVE",
+                            "Enter Digit Only",
+                            "Enter Domin Name",
+                            "Confirmation",
+                            "Warning",
+                            "Network Configuration saved successfully",
+                            "Fail To Update Network Configuration",
+                            "Please Make Sure All Text Inputs are Filled"
+                        ]
+                    },
+                    "Network Config ProfinetIP": {
+                        "menuName": "Network Config ProfinetIP",
+                        "tags": [
+                            "Configuration - Communication :",
+                            "IP Address",
+                            "Subnet Mask",
+                            "Default Gateway",
+                            "Station Name",
+                            "RESET TO DEFAULT",
+                            "CANCEL",
+                            "SAVE",
+                            "Enter Digit Only",
+                            "Confirmation",
+                            "Warning",
+                            "Please Make Sure All Text Inputs are Filled"
+                        ]
+                    }
+                },
+                "Alarm Mgmt": {
+                    "menuName": "Alarm Mgmt",
+                    "tags": [
+                        "Alarm Management",
+                        "RESET TO DEFAULTS",
+                        "SAVE",
+                        "CANCEL",
+                        "Alarm configuration saved successfully",
+                        "Failed to save alarm configuration",
+                        "Alarm Type",
+                        "Invalid value is entered, Reverted to old value"
+                    ]
+                },
+                "LDAP Config": {
+                    "menuName": "LDAP Config",
+                    "tags": [
+                        "IP Address",
+                        "IP Address",
+                        "Subnet Mask",
+                        "Subnet Mask",
+                        "Default Gateway",
+                        "Default Gateway",
+                        "VERIFY",
+                        "CANCEL",
+                        "SAVE"
+                    ]
+                },
+                "Gateway Data": {
+                    "menuName": "Gateway Data",
+                    "tags": [
+                        "Password Expiration",
+                        "Password Expiration",
+                        "Day(s)",
+                        "Idle Time Logout",
+                        "Idle Time Logout",
+                        "Min(s)",
+                        "CANCEL",
+                        "SAVE"
+                    ]
+                }
+            },
+            "Data": {
+                "menuName": "Data",
+                "tags": [
+                    "Generate Report",
+                    "TYPE",
+                    "STORAGE& OUTPUT",
+                    "DATA FILTERS",
+                    "SUMMARY",
+                    "NEXT"
+                ]
+            },
+            "Information": {
+                "menuName": "Information",
+                "tags": [
+                    "Machine Details",
+                    "Model",
+                    "Number of Alarms",
+                    "Software Versions",
+                    "UI Controller",
+                    "Supervisory Controller",
+                    "Actuator Controller",
+                    "Power Controller",
+                    "SOFTWARE UPGRADE",
+                    "Power Supply",
+                    "Life Time Welds",
+                    "Overloads",
+                    " Power Supply Model",
+                    "Frequency",
+                    "Wattage",
+                    "Actuator",
+                    "LifeTime Cycles",
+                    "Actuator Model",
+                    "Calibration Date",
+                    "Stroke Length",
+                    "Connectivity",
+                    "MAC ID ",
+                    "Serial Number",
+                    "Serial Number",
+                    "Configuration Upgrade",
+                    "Safety Controller",
+                    "System Features",
+                    "Storage",
+                    "Cylinder Size",
+                    "Industrial Ethernet",
+                    "OPC UA",
+                    "LDAP",
+                    "User IO Diagnostics",
+                    "Barcode Scanner",
+                    "User Access Level",
+                    "Batch Control",
+                    "Event Logging",
+                    "Elite",
+                    "Advance",
+                    "Basic",
+                    "Support",
+                    "Local HMI",
+                    "PC HMI",
+                    "PC Utility",
+                    "100 Alarms",
+                    "10k Weld Storage",
+                    "16 Recipes",
+                    "500 Alarms",
+                    "100k Weld Storage",
+                    "50 Recipes",
+                    "1000 Alarms",
+                    "1000 Recipes",
+                    "1M Weld Storage",
+                    "Supported",
+                    "Not Supported",
+                    "Standard",
+                    "Advanced",
+                    "Premium",
+                    "Profinet",
+                    "Ethernet IP",
+                    "HMI Type",
+                    "Configuration Version",
+                    "Bearing Type",
+                    "Standard",
+                    "Stainless Steel",
+                    "Machine Serial Number"
+                ],
+                "SoftwareUpgrade": {
+                    "menuName": "SOFTWARE UPGRADE",
+                    "tags": [
+                        "CHOOSE PARAMETER",
+                        "READ USB",
+                        "To begin, insert USB drive and click \" Read USB \".",
+                        "Supervisory Controller",
+                        "Actuator Controller",
+                        "UI Controller",
+                        "DONE",
+                        "UPGRADE",
+                        "CONFIRMATION",
+                        "Complete",
+                        "In progress",
+                        "Warning",
+                        "Confirmation",
+                        "Upgrade is successful, Please reboot the system",
+                        "Upgrade failure, Please reboot the system",
+                        "Please select the file name"
+                    ],
+                    "InsertUSBtoWelder": {
+                        "tags": [
+                            "Actuator Controller",
+                            "Power Controller",
+                            "Supervisory Controller"
+                        ]
+                    },
+                    "InsertUSBtoRaspPi": {
+                        "tags": [
+                            "UI Controller"
+                        ]
+                    }
+                }
+            },
+            "Service Count": {
+                "menuName": "Service Count",
+                "tags": [
+                    "ADD SERVICE COUNT",
+                    "Service Name",
+                    "Counter",
+                    "Limit",
+                    "End Date & Time",
+                    "Action",
+                    "Edit",
+                    "Reset",
+                    "Delete",
+                    "User ID",
+                    "Method",
+                    "Limit",
+                    "Date",
+                    "Time",
+                    "EDIT SERVICE COUNT",
+                    "Count",
+                    "Date & Time",
+                    "Save",
+                    "OK",
+                    "ALERT !",
+                    "Add Reminder Unknown Error !",
+                    "Add Reminder Successful !",
+                    "Add Reminder Fail !",
+                    "Reminder Name Aleady Exist !",
+                    "Add Reminder Maximum Limit Crossed !",
+                    "Method",
+                    "Entered Data Is Not Valid !",
+                    "Are you sure. Do you want to delete ?",
+                    "Access Is Restricted For Branson Service Person Only !"
+                ]
+            },
+            "Calibration": {
+                "menuName": "Calibration",
+                "tags": [
+                    "Calibrate Actuator ",
+                    "Calibrate Full System",
+                     " (Quick Cal)"
+                ]
+            },
+            "CalibrationActuator": {
+                "menuName": "Calibration",
+                "tags": [
+                    "Calibrate Actuator",
+                    "With Start Switches",
+                    "With Manual Override"
+                ]
+            },
+            "CalibrationActuatorStartSwitches": {
+                "menuName": "Calibration",
+                "tags": [
+                    "Quick Calibration",
+                    "Press Start Switches",
+                    "      Calibration Saved",
+                    "Close",
+                    " Release Start Switches"
+                ]
+            },
+            "CalibrationFullSystem": {
+                "menuName": "Calibration",
+                "tags": [
+                    "Calibrate Full System",
+                    "Reset Sensor Calibration",
+                    "Calibrate Sensors",
+                    " Sensor ",
+                    " Calibration",
+                    " Sensors"
+                ]
+            },
+            "CalibrationForce": {
+                "menuName": "Calibration",
+                "tags": [
+                    "Calibration",
+                    "Calibrate Force",
+                    "POSITION LOAD CELL",
+                    "Press Start Switches",
+                    "ENTER 1st LOAD CELL",
+                    "Readings",
+                    "lbs",
+                    "Continue",
+                    "Cancel",
+                    "  Verify Using Horn Down !",
+                    "CONFIRMATION",
+                    "  The Calibration Process Will Be Aborted !",
+                    "Yes",
+                    "No",
+                    "Please Wait !",
+                    "Close",
+                    "CALIBRATE PRESSURE",
+                    "VERIFY",
+                    "RE-ENTER LOAD CELL",
+                    "  Verify Using Horn Down !",
+                    "  The Calibration Process Will Be Aborted !"
+                ]
+            },
+            "CalibrationPressure": {
+                "menuName": "Calibration",
+                "tags": [
+                    "Calibration",
+                    "Calibrate Pressure",
+                    "ENTER PRESSURE GAUGE",
+                    "Readings",
+                    "psi",
+                    "Continue",
+                    "Cancel",
+                    "        Calibration Saved !",
+                    "CONFIRMATION",
+                    " Are You Sure You Want To Abort The Calibration !",
+                    "Yes",
+                    "No",
+                    "Please Wait !",
+                    "CLOSE",
+                    "CALIBRATE FORCE",
+                    "VERIFY",
+                    "  Verify Using Horn Down !",
+                    "  The Calibration Process Will Be Aborted !"
+                ]
+        },
+            "CalibrationResetSensors": {
+                "menuName": "Calibration",
+                "tags": [
+                "Reset Sensor Calibration",
+                "This Will Revert To Factory Defaults !",
+                "OK",
+                "Cancel",
+                "Reset Calibration Done !"
+                ]
+            },
+            "CalibrationSensors": {
+                "menuName": "Calibration",
+                "tags": [
+                    "Calibrate Sensors",
+                    "Calibrate Force",
+                    "Calibrate Pressure"
+                ]
+            }
+        },
+        "Actuator Setup": {
+            "menuName": "Actuator Setup",
+            "tags": [
+                "Horn Down Clamp:",
+                "On",
+                "Off",
+                "RETRACT",
+                "WELD PRESSURE",
+                "Horn Clamp:",
+                "Pressure",
+                "Absolute Position",
+                "Actual Force",
+                "Maximum Velocity",
+                "FIND PART CONTACT",
+                "HORN DOWN",
+                "Stroke Length",
+                "Home",
+                "WARNING: Before using Manual override, make sure all hands are clear of the Horn and base surface."
+            ]
+        },
+        "Diagnostics": {
+            "menuName": "Diagnostics",
+            "tags": [
+                "Scan",
+                "Test",
+                "Seek",
+                "Event Log",
+                "Alarm Log",
+                "User IO"
+            ]
+        },
+        "Scan": {
+            "menuName": "Scan",
+            "tags": [
+                "Horn Scan",
+                "START HORN SCAN",
+                "ABORT SCAN",
+                "HORN RECIPE",
+                "Scan In Progress...",
+                "CANCEL",
+                "Do you want to abort the scan operation..?"
+            ]
+        },
+        "ScanRecipe": {
+            "menuName": "ScanRecipe",
+            "tags": [
+                "SCAN FREQUENCY STEP",
+                "SCAN MAX AMPLITUDE",
+                "SCAN MAX CURRENT",
+                "SET DIGITAL TUNE WITH HORN SCAN",
+                "SCAN START FREQUENCY",
+                "SCAN STOP FREQUENCY",
+                "SCAN TIME DELAY",
+                "RESET TO DEFAULT",
+                "CANCEL",
+                "SAVE"
+            ]
+        },
+        "Scan Graph View": {
+            "menuName": "Scan Graph View",
+            "tags": [
+                "No Data To Display..!"
+            ]
+        },
+        "Test": {
+            "menuName": "Test",
+            "tags": [
+                "Ultrasonics Test",
+                "START TEST",
+                "STOP TEST",
+                "TEST RECIPE",
+                "Status",
+                "Frequency",
+                "Stored Freq.",
+                "Power",
+                "TEST AMPLITUDE",
+                "Press and hold START TEST button to run test"
+            ]
+        },
+        "Test Recipe": {
+            "menuName": "Test Recipe",
+            "tags": [
+                "TEST FREQUENCY HIGH",
+                "TEST FREQUENCY LOW",
+                "TEST FREQUENCY OFFSET",
+                "CLEAR MEMORY BEFORE TEST",
+                "TEST AMPLITUDE RAMP TIME",
+                "TEST AMPLITUDE",
+                "TEST AMPLITUDE PROPOTIONAL GAIN",
+                "TEST AMPLITUDE INTEGRAL GAIN",
+                "TEST AMPLITUDE DERIVATIVE GAIN",
+                "TEST PHASE PROPOTIONAL GAIN",
+                "TEST PHASE INTEGRAL GAIN",
+                "TEST PHASE DERIVATIVE GAIN",
+                "TEST PHASE LOOP CF",
+                "RESET TO DEFAULT",
+                "CANCEL",
+                "SAVE"
+            ]
+        },
+        "Test Graph View": {
+            "menuName": "Test Graph View",
+            "tags": [
+                "No Data To Display..!"
+            ]
+        },
+        "Seek": {
+            "menuName": "Seek",
+            "tags": [
+                "Seek",
+                "SEEK RUN",
+                "SEEK RECIPE"
+            ]
+        },
+        "Seek Recipe": {
+            "menuName": "Seek Recipe",
+            "tags": [
+                "SEEK FREQUENCY LIMIT HIGH",
+                "SEEK FREQUENCY LIMIT LOW",
+                "SEEK FREQUENCY OFFSET",
+                "MEMORY CLEAR BEFORE SEEK",
+                "SEEK TIME",
+                "SEEK AMPLITUDE RAMP TIME",
+                "SEEK AMPLITUDE",
+                "SEEK AMPLITUDE PROPOTIONAL GAIN",
+                "SEEK AMPLITUDE INTEGRAL GAIN",
+                "SEEK AMPLITUDE DERIVATIVE GAIN",
+                "SEEK PHASE PROPOTIONAL GAIN",
+                "SEEK PHASE INTEGRAL GAIN",
+                "SEEK PHASE DERIVATIVE GAIN",
+                "SEEK BLIND TIME SEEK",
+                "SEEK PHASE LOOP CF",
+                "RESET TO DEFAULT",
+                "CANCEL",
+                "SAVE"
+            ]
+        },
+        "Seek Graph View": {
+            "menuName": "Seek Graph View",
+            "tags": [
+                "No Data To Display..!"
+            ]
+        },
+        "Event Log": {
+            "menuName": "Event Log",
+            "tags": [
+                "Event Log : ",
+                "More Info",
+                "Event #",
+                "Event Name",
+                "Event ID",
+                "Identifier",
+                "From",
+                "To",
+                "P/S Serial #",
+                "Act Serial #",
+                "HMI Serial #",
+                "Comments",
+                "Source",
+                "Date & Time",
+                "User"
+            ]
+        },
+        "Alarm Log": {
+            "menuName": "Alarm Log",
+            "tags": [
+                "Error Type",
+                "Alarm ID",
+                "Recipe",
+                "Recipe Ver",
+                "Cycle",
+                "Date & Time",
+                "Alarms",
+                "Warnings",
+                "Notifications",
+                "Generate Report",
+                "Description",
+                "User Name",
+                "Alarm Type",
+                "Results",
+                "Reset All",
+                "Add Notes",
+                "Edit Notes",
+                "Reset",
+                "Probable Reason",
+                "Added Notes",
+                "Service Count",
+                "Alert !",
+                "Horn is clamped, 'Reset All' alarms action will retract the horn. Do you want to continue?"
+            ]
+        },
+        "User IO": {
+            "menuName": "User IO",
+            "tags": [
+                "Digital Inputs",
+                "Digital Outputs",
+                "Analog Inputs",
+                "Analog Outputs",
+                "STOP",
+                "REFRESH OUTPUT"
+            ]
+        },
+        "Generate Report": {
+            "menuName": "Generate Report",
+            "tags": [
+                "Generate Report",
+                "Saved Reports",
+                "TYPE",
+                "STORAGE",
+                "DATA",
+                "SUMMARY",
+                "SINGLE",
+                "CONTINUOUS",
+                "NEXT",
+                "Generate Report",
+                "& OUTPUT",
+                "FILTERS"
+            ]
+        },
+        "Generate Report Storage Option": {
+            "menuName": "Generate Report",
+            "tags": [
+                "Generate Report",
+                "Saved Reports",
+                "TYPE",
+                "STORAGE OPTIONS",
+                "OUTPUT",
+                "USB",
+                "ETHERNET",
+                "CSV",
+                "PDF",
+                "STORAGE & OUTPUT",
+                "DATA FILTERS",
+                "SUMMARY",
+                "SINGLE",
+                "CONTINUOUS",
+                "NEXT",
+                "PREVIOUS",
+                "Generate Report",
+                "& OUTPUT",
+                "FILTERS"
+            ]
+        },
+        "Generate Report Data Filters": {
+            "menuName": "Generate Report",
+            "tags": [
+                        "Generate Report",
+                        "Saved Reports",
+                        "TYPE",
+                        "DATA FILTERS",
+                        "OUTPUT",
+                        "USB",
+                        "ETHERNET",
+                        "CSV",
+                        "PDF",
+                        "STORAGE",
+                        "DATA",
+                        "SUMMARY",
+                        "SINGLE",
+                        "CONTINUOUS",
+                        "NEXT",
+                        "PREVIOUS",
+                        "Generate Report",
+                        "Delete record from database",
+                        "Weld Results",
+                        "WeldSignatures",
+                        "AlarmData",
+                        "EventData",
+                        "HornScanResults",
+                        "HornScanSignatures",
+                        "RefrenceWeldSignatures",
+                        "CalibrationData",
+                         "& OUTPUT",
+                        "FILTERS"
+            ]
+        },
+        "Generate Report Summary": {
+            "menuName": "Generate Report",
+            "tags": [
+                    "Generate Report",
+                    "Saved Reports",
+                    "TYPE",
+                    "SUMMARY",
+                    "OUTPUT",
+                    "USB",
+                    "ETHERNET",
+                    "CSV",
+                    "PDF",
+                    "STORAGE & OUTPUT",
+                    "DATA FILTERS",
+                    "SINGLE",
+                    "CONTINUOUS",
+                    "GENERATE REPORT",
+                    "PREVIOUS",
+                    "Generate Report",
+                    "Report Type :",
+                    "Storage Type :",
+                    "Data Filter :",
+                    "Output :",
+                    "SAVE REPORT",
+                    "CONFIRMATION",
+                    "CANCEL",
+                    "Enter report name",
+                    "SAVE",
+                    "NOT STARTED",
+                    "STARTED",
+                    "COMPLETED",
+                    "& OUTPUT",
+                    "FILTERS"
+
+            ]
+        },
+        "Import/ Export": {},
+        "Logout": {},
+        "Login": {
+            "menuName": "Login",
+            "tags": [
+                "Enter Password",
+                "LOGIN",
+                "Too many failed login attempts. System will be locked for 15 minutes.",
+                "Invalid Password. Please re-enter and try again.",
+                "Login Successful",
+                "Password is Empty",
+                "Enter Username",
+                "Branson Polaris",
+                "User Name is Empty",
+                "Alert"
+            ]
+        },
+        "Chanage Password": {
+            "menuName": "Chanage Password",
+            "tags": [
+                "Branson Polaris",
+                "Current Password",
+                "New Password",
+                "Confirm Password",
+                "Enter Current Password",
+                "Enter New Password",
+                "Enter Confirm Password",
+                "RESET",
+                "CANCEL",
+                "Please reset your login password",
+                "Wrong Password",
+                "New Password and Confirm Password should be same",
+                "New Password or Confirm Password is empty",
+                "Current Password and New Password should be different",
+                "Password must be at least 8 characters in length, including 1 uppercase letter, 1 lowercase letter, 1 numeric character, 1 special character",
+                "Alert"
+            ]
+        },
+        "NumericKeypad": {
+            "tags": [
+                "CANCEL",
+                "DONE",
+                "Min",
+                "Max",
+                "STEPPING",
+                "Step",
+                "Step Value",
+                "Step@Time",
+                "Step@Energy",
+                "Step@Pk Power",
+                "Step@Absolute",
+                "Step@Collapse",
+                "Step@Ext. Signal",
+                "Invalid value is entered",
+                "Textfield can not be blank"
+            ]
+        }
+    },
+    "alarm": {
+        "menuName": "ALARM",
+        "alarmGeneral": {
+            "tags": [
+                "ERROR DESCRIPTION",
+                "RESET",
+                "HIDE"
+            ]
+        },
+        "Alarms Log": {
+            "menuName": "Alarms Log",
+            "tags": [
+                "New Alarms Found",
+                "Error Type",
+                "Alarm ID",
+                "Action",
+                "ALARMS",
+                "Reset",
+                "Reset All",
+                "View Details",
+                "ALERT !",
+                "No Details Are Available!",
+                "OK",
+                "No Details To Show !"
+            ]
+        },
+        "alarmName": {
+            "tags": [
+                "External Sonics Delay Timeout",
+                "Part Window Abort",
+                "Part Contact before"
+            ]
+        },
+        "alarmDescription": {
+            "tags": [
+                "Trigger Delay has been turned on, but the assigned input did not become inactive within the 30 seconds allowed.",
+                "The Missing Part Minimum Distance has not been reached before Trigger occurred or the Maximum Distance has been exceeded before Trigger has occurred.",
+                "The Part Contact Distance has been met before the defined Pretrigger Distance."
+            ]
+        }
+    },
+    "popup": {
+        "tags": [
+            "Alert",
+            "Cancel",
+            "REPLACE",
+            "YES CONTINUE",
+            "Already marked as a reference graph signature.",
+            "Alert"
+        ]
+    },
+    "MultiWelder Information": {
+        "tags": [
+            "Welder Info",
+            "Welder Name",
+            "OK",
+            "IP Address",
+            "Welder"
+        ]
+    },
+    "footer": {
+        "tags": [
+            "Welder",
+            "Note: HMI is in Read -Only/Lock mode !",
+            "Fieldbus Token",
+            "Ethernet Connected",
+            "USB Plugged-In",
+            "No Welder",
+            "Note: HMI is in Read -Only mode !",
+            "Note: HMI is in Lock mode !",
+            "Note: HMI is in fully functional mode!"
+        ]
+    },
+    "Platform Config": {
+        "tags": [
+            "No Welder Connected",
+            "Welder",
+            "Configuration Failed",
+            "Waiting for configuration"
+        ]
+    },
+    "Platform Config Upgrade": {
+        "menuName": "Platform Config Upgrade",
+        "tags": [
+            "USB MODE",
+            "READ USB",
+            "UPGRADE",
+            "TRY AGAIN",
+            "ABORT",
+            "DONE",
+            "ETHERNET MODE",
+            "CANCEL",
+            "CONFIGURATION UPGRADE",
+            "To begin configuration upgrade, select from below options",
+            "Warning: Please connect USB device and do not remove until configurartion upgrade is completed.",
+            "The welder is restarting, please wait...",
+            "Configuration files has been upgraded successfully",
+            "Configuration Version : ",
+            " Configuration Date : ",
+            "Welder restarted successfully",
+            "BROWSE",
+            "Select configuration files path",
+            "CONFIRMATION"
+        ]
+    },
+    "Platform Config Upgrade Start USB": {
+        "tags": [
+            "Invalid state",
+            "No USB mass storage device",
+            "No config files present",
+            "Invalid command"
+        ]
+    },
+    "Platform Config Upgrade Start Ethernet": {
+        "tags": [
+            "Invalid state",
+            "Invalid command"
+        ]
+    },
+    "Platform Config Upgrade Read USB": {
+        "tags": [
+            "Invalid state",
+            "Failed to parse configuration",
+            "Failed to decrypt file",
+            "Configuration file validation failed",
+            "Invalid version information",
+            "Invalid command"
+        ]
+    },
+    "Platform Config Upgrade Read Ethernet": {
+        "tags": [
+            "Invalid state",
+            "Failed to parse configuration",
+            "Failed to decrypt file",
+            "Configuration file validation failed",
+            "Invalid version information",
+            "Invalid command"
+        ]
+    },
+    "Platform Config Upgrade USB": {
+        "tags": [
+            "Invalid state",
+            "Failed to upgrade Configuration file",
+            "Invalid command"
+        ]
+    },
+    "Platform Config Upgrade Ethernet": {
+        "tags": [
+            "Invalid state",
+            "Failed to upgrade Configuration file",
+            "Invalid command"
+        ]
+    },
+    "Platform Config Upgrade Interface": {
+        "tags": [
+            "Config_A.out file not found.",
+            "Config_B.out file not found.",
+            "Communication Error"
+        ]
+    },
+    "AlertWindow": {
+        "tags": [
+            "Alert",
+            "Troubleshooting Tips:",
+            "Disconnected.",
+            "Welder",
+            "Ok",
+            "Switching to ",
+            "1. Check if the cable connections are intact.",
+            "2. Ensure the power supply is running properly.",
+            "3. Try rebooting the HMI and check again."
+        ]
+    },
+    "MessagePopup": {
+        "tags": [
+            "Warning !",
+            "Invalid value is entered, Reverted to old value"
+        ]
+    },
+    "BransonConfirmationPopup": {
+        "tags": [
+            "CONFIRMATION",
+            "Warning Message",
+            "OK",
+            "CANCEL"
+        ]
+    },
+    "AnalyticsTableView": {
+        "tags": [
+            "Result",
+            "Generate Report",
+            "Choose Parameters"
+        ]
+    },
+    "DiagnosticEvent": {
+        "tags": [
+            "Event Log",
+            "Event Log : ",
+            "More Info",
+            "Event #",
+            "Event Name",
+            "Date & Time",
+            "Event ID",
+            "Identifier",
+            "From",
+            "To",
+            "P/S Serial #",
+            "Act Serial #",
+            "HMI Serial #",
+            "Comments",
+            "Source",
+            "User"
+        ]
+    },
+    "DiagnosticUserIO": {
+        "tags": [
+            "User IO",
+            "Digital Inputs",
+            "Digital Outputs",
+            "Analog Inputs",
+            "Analog Outputs",
+            "STOP",
+            "REFRESH OUTPUT"
+        ]
+    },
+    "BransonSystemConfiguration": {
+        "tags": [
+            "Serial Number",
+            "System Serial Number",
+            "Power Supply Serial Number",
+            "Actuator Serial Number",
+            "CANCEL",
+            "SAVE",
+            "Confirmation",
+            "Warning",
+            "System Configuration saved successfully",
+            "Fail to save System Configuration",
+            "System Serial Number is empty",
+            "Power Supply Serial Number is empty",
+            "Actuator Serial Number is empty"
+        ]
+    },
+    "BransonService": {
+        "tags": [
+            "Factory Reset",
+            "Copy DB to USB",
+            "Delete DB",
+            "EMMC Memory Usage",
+            "Board Replaced",
+            "System Cleaned",
+            "Notes",
+            "Notes History",
+            "Save",
+            "RESET",
+            "DELETE",
+            "COPY",
+            "BOARD REPLACED",
+            "SYSTEM CLEANED",
+            "Enter your Notes here..."
+        ]
+    },
+    "Emergency Stop Popup": {
+        "tags": [
+            "Emergency Stop",
+            "RESET"
+        ]
+    }
+}

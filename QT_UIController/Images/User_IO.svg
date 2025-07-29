@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="66.794" height="36" viewBox="0 0 66.794 36">
+  <g id="Group_3410" data-name="Group 3410" transform="translate(-547.603 -593.715)">
+    <path id="Icon_awesome-user" data-name="Icon awesome-user" d="M15.75,18a9,9,0,1,0-9-9A9,9,0,0,0,15.75,18Zm6.3,2.25H20.876a12.24,12.24,0,0,1-10.252,0H9.45A9.452,9.452,0,0,0,0,29.7v2.925A3.376,3.376,0,0,0,3.375,36h24.75A3.376,3.376,0,0,0,31.5,32.625V29.7A9.452,9.452,0,0,0,22.05,20.25Z" transform="translate(547.603 593.715)" fill="#2d383f"/>
+    <g id="Group_2493" data-name="Group 2493" transform="translate(407.307 512.739)">
+      <path id="Icon_open-arrow-right" data-name="Icon open-arrow-right" d="M15.721,0V6.289H0V9.433H15.721v6.289l9.433-7.955Z" transform="translate(181.936 83.676)" fill="#2d383f"/>
+      <path id="Icon_open-arrow-left" data-name="Icon open-arrow-left" d="M9.433,0,0,7.955l9.433,7.766V9.433H25.154V6.289H9.433Z" transform="translate(178.006 100.554)" fill="#2d383f"/>
+    </g>
+  </g>
+</svg>

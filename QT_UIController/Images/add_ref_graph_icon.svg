@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" viewBox="0 0 40 32">
+  <g id="Group_3663" data-name="Group 3663" transform="translate(-3080 5347)">
+    <g id="Component_158_19" data-name="Component 158 – 19" transform="translate(3080 -5347)">
+      <g id="Group_3351" data-name="Group 3351" transform="translate(-51.949 -6)">
+        <rect id="Rectangle_216" data-name="Rectangle 216" width="40" height="32" transform="translate(51.949 6)" fill="#02498f"/>
+        <g id="Group_3350" data-name="Group 3350" transform="translate(-19654.152 18022)">
+          <path id="Path_1454" data-name="Path 1454" d="M18548.943-18562.711l2.662-1.811,4.58,6.922,14.7-3.088" transform="translate(1164.441 562.957)" fill="none" stroke="#3883cb" stroke-width="1.5"/>
+          <path id="Path_1453" data-name="Path 1453" d="M19565.592-17984.336l9.209-6.7,3.014,4.281,8.875-6.137" transform="translate(147.239 -11.092)" fill="none" stroke="#ffd54d" stroke-width="1.5"/>
+          <path id="Path_71" data-name="Path 71" d="M9487.857,7584.208h-22.825V7562.3" transform="translate(10247.797 -25574.234)" fill="none" stroke="#fff" stroke-width="2"/>
+          <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M4.644.238,3.768,2.014,1.809,2.3a.429.429,0,0,0-.237.732L2.989,4.413,2.654,6.365a.429.429,0,0,0,.622.452L5.029,5.9l1.753.921A.429.429,0,0,0,7.4,6.365L7.069,4.413,8.487,3.032A.429.429,0,0,0,8.249,2.3L6.29,2.014,5.414.238A.43.43,0,0,0,4.644.238Z" transform="translate(19732.881 -18009.432)" fill="#ffd54d"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

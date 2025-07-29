@@ -1,0 +1,73 @@
+' Reference to Microsoft XML, v6.0 is required
+' Go to Tools > References and check "Microsoft XML, v6.0"
+
+Sub GenerateUniqueKey()
+    Dim serialNumber As String
+    Dim inputDate As String
+    Dim combinedString As String
+    Dim enc As Object
+    Dim bytes() As Byte
+    Dim hash() As Byte
+    Dim i As Integer
+    Dim result As String
+    Dim shuffled As String
+    Dim temp As String
+    Dim arr() As String
+    Dim j As Integer
+    Dim generatedKey As String
+    
+    On Error GoTo ErrorHandler
+    
+    ' Get the values from the worksheet
+    serialNumber = Range("D3").Value
+    inputDate = Range("E3").Value
+    
+    ' Validate and format the input date
+    If IsDate(inputDate) Then
+        inputDate = Format(CDate(inputDate), "yyyymmdd")
+    Else
+        Range("F3").Value = "#VALUE!"
+        Exit Sub
+    End If
+    
+    ' Combine the serial number and input date
+    combinedString = serialNumber & inputDate
+    
+    ' Generate SHA-256 hash
+    Set enc = CreateObject("System.Security.Cryptography.SHA256Managed")
+    bytes = StrConv(combinedString, vbFromUnicode)
+    hash = enc.ComputeHash_2(bytes)
+    
+    For i = 0 To UBound(hash)
+        result = result & LCase(Right("0" & Hex(hash(i)), 2))
+    Next i
+    
+    ' Deterministically shuffle the output based on the hash itself
+    ReDim arr(1 To Len(result))
+    For i = 1 To Len(result)
+        arr(i) = Mid(result, i, 1)
+    Next i
+    
+    For i = 1 To UBound(arr)
+         j = ((i - 1) * 31 + 7) Mod UBound(arr) + 1
+        temp = arr(i)
+        arr(i) = arr(j)
+        arr(j) = temp
+    Next i
+    
+    shuffled = Join(arr, "")
+    
+    ' Ensure the key is exactly 12 characters long
+    If Len(shuffled) > 12 Then
+        generatedKey = Left(shuffled, 12)
+    Else
+        generatedKey = shuffled & String(12 - Len(shuffled), "0")
+    End If
+    
+    ' Output the generated key to the worksheet
+    Range("F3").Value = generatedKey
+    Exit Sub
+    
+ErrorHandler:
+    Range("F3").Value = "#VALUE!"
+End Sub

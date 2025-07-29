@@ -1,0 +1,1837 @@
+Logger: Enroll: 9WDSServer:87e22fa2ab01b6a6
+SockFd: 7
+Socket get flags success
+Socket set non-blocking success
+Logger: Enroll: 10CommThread:2c87ac2696c549e8
+Logger[2023-08-21 11:26:50] ID:2c87ac2696c549e8 S:2 D:PeerInfo instance created.
+Logger[2023-08-21 11:26:50] ID:87e22fa2ab01b6a6 S:1 D:WDS Server: no data
+Logger: Enroll: 10CommThread:2c87ac2696c549e8
+Logger[2023-08-21 11:26:50] ID:2c87ac2696c549e8 S:2 D:PeerInfo instance created.
+Logger: Enroll: 10CommThread:2c87ac2696c549e8
+Logger[2023-08-21 11:26:50] ID:2c87ac2696c549e8 S:2 D:PeerInfo instance created.
+Logger[2023-08-21 11:26:50] ID:2c87ac2696c549e8 S:7 D:Comm Thread 0.
+Logger[2023-08-21 11:26:50] ID:2c87ac2696c549e8 S:6 D:Waiting for start request.
+Logger[2023-08-21 11:26:50] ID:2c87ac2696c549e8 S:7 D:Comm Thread 1.
+Logger[2023-08-21 11:26:50] ID:2c87ac2696c549e8 S:6 D:Waiting for start request.
+Logger[2023-08-21 11:26:50] ID:2c87ac2696c549e8 S:7 D:Comm Thread 2.
+Logger[2023-08-21 11:26:50] ID:2c87ac2696c549e8 S:6 D:Waiting for start request.
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.110
+Received Auth number: 0
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Logger[2023-08-21 11:27:00] ID:87e22fa2ab01b6a6 S:7 D:Authentication successful
+Logger[2023-08-21 11:27:00] ID:87e22fa2ab01b6a6 S:2 D:Triggered for Welder:0
+COMM Thread 0Triggered: 
+Logger: Enroll: 16WeldRecipeACEPRO:88ed68767647a2bd
+Logger: Enroll: 10SeekRecipe:5406ad92ed9e3367
+Logger: Enroll: 4Comm:85a97ac03ffb769e
+Logger[2023-08-21 11:27:00] ID:2c87ac2696c549e8 S:2 D:Comm instance created.
+Logger: Enroll: 18EncryptDecryptData:1f20a1d956ec17d6
+Client connected, performing TLS handshake...
+Verified server certificate successfully.
+
+Logger[2023-08-21 11:27:01] ID:85a97ac03ffb769e S:2 D:Connected:192.168.1.110:8080
+Logger[2023-08-21 11:27:01] ID:2c87ac2696c549e8 S:2 D:Communication started...
+Available Peer IP: 192.168.1.108
+Received Auth number: 0
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Logger[2023-08-21 11:27:05] ID:87e22fa2ab01b6a6 S:7 D:Authentication successful
+Logger[2023-08-21 11:27:05] ID:87e22fa2ab01b6a6 S:2 D:Triggered for Welder:1
+COMM Thread 1Triggered: 
+Logger: Enroll: 16WeldRecipeACEPRO:88ed68767647a2bd
+Logger: Enroll: 10SeekRecipe:5406ad92ed9e3367
+Logger: Enroll: 4Comm:85a97ac03ffb769e
+Logger[2023-08-21 11:27:05] ID:2c87ac2696c549e8 S:2 D:Comm instance created.
+Logger: Enroll: 18EncryptDecryptData:1f20a1d956ec17d6
+Client connected, performing TLS handshake...
+Verified server certificate successfully.
+
+Logger[2023-08-21 11:27:06] ID:85a97ac03ffb769e S:2 D:Connected:192.168.1.108:8080
+Logger[2023-08-21 11:27:06] ID:2c87ac2696c549e8 S:2 D:Communication started...
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.108
+Received Auth number: 0
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Already Connected192.168.1.108
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Active Welder: 0
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Logger[2023-08-21 11:32:51] ID:85a97ac03ffb769e S:1 D:BIORead failed,retval -1
+Logger[2023-08-21 11:32:51] ID:2c87ac2696c549e8 S:1 D:Error in processing tx/rx frame
+Logger[2023-08-21 11:32:51] ID:85a97ac03ffb769e S:2 D:Detached:192.168.1.108:8080
+Logger[2023-08-21 11:32:51] ID:2c87ac2696c549e8 S:2 D:Disconnected peer successfully
+Logger[2023-08-21 11:32:51] ID:2c87ac2696c549e8 S:7 D:Comm Thread 1.
+Logger[2023-08-21 11:32:51] ID:2c87ac2696c549e8 S:6 D:Waiting for start request.
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Logger[2023-08-21 11:35:45] ID:85a97ac03ffb769e S:1 D:BIORead failed,retval -1
+Logger[2023-08-21 11:35:45] ID:2c87ac2696c549e8 S:1 D:Error in processing tx/rx frame
+Logger[2023-08-21 11:35:45] ID:85a97ac03ffb769e S:2 D:Detached:192.168.1.110:8080
+Logger[2023-08-21 11:35:45] ID:2c87ac2696c549e8 S:2 D:Disconnected peer successfully
+Logger[2023-08-21 11:35:45] ID:2c87ac2696c549e8 S:7 D:Comm Thread 0.
+Logger[2023-08-21 11:35:45] ID:2c87ac2696c549e8 S:6 D:Waiting for start request.
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.110
+Received Auth number: 0
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Logger[2023-08-21 11:38:50] ID:87e22fa2ab01b6a6 S:7 D:Authentication successful
+Logger[2023-08-21 11:38:50] ID:87e22fa2ab01b6a6 S:2 D:Triggered for Welder:0
+COMM Thread 0Triggered: 
+Logger: Enroll: 16WeldRecipeACEPRO:88ed68767647a2bd
+Logger: Enroll: 10SeekRecipe:5406ad92ed9e3367
+Logger: Enroll: 4Comm:85a97ac03ffb769e
+Logger[2023-08-21 11:38:50] ID:2c87ac2696c549e8 S:2 D:Comm instance created.
+Logger: Enroll: 18EncryptDecryptData:1f20a1d956ec17d6
+Client connected, performing TLS handshake...
+Verified server certificate successfully.
+
+Logger[2023-08-21 11:38:51] ID:85a97ac03ffb769e S:2 D:Connected:192.168.1.110:8080
+Logger[2023-08-21 11:38:51] ID:2c87ac2696c549e8 S:2 D:Communication started...
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.110
+Received Auth number: 0
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Already Connected192.168.1.110
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.110
+Received Auth number: 0
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Already Connected192.168.1.110
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Available Peer IP: 192.168.1.108
+Received Auth number: 0
+Available Welders:0
+Available Welders:1
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+Logger[2023-08-21 11:42:10] ID:87e22fa2ab01b6a6 S:7 D:Authentication successful
+Logger[2023-08-21 11:42:10] ID:87e22fa2ab01b6a6 S:2 D:Triggered for Welder:1
+COMM Thread 1Triggered: 
+Logger: Enroll: 16WeldRecipeACEPRO:88ed68767647a2bd
+Logger: Enroll: 10SeekRecipe:5406ad92ed9e3367
+Logger: Enroll: 4Comm:85a97ac03ffb769e
+Logger[2023-08-21 11:42:10] ID:2c87ac2696c549e8 S:2 D:Comm instance created.
+Logger: Enroll: 18EncryptDecryptData:1f20a1d956ec17d6
+Client connected, performing TLS handshake...
+Verified server certificate successfully.
+
+Logger[2023-08-21 11:42:11] ID:85a97ac03ffb769e S:2 D:Connected:192.168.1.108:8080
+Logger[2023-08-21 11:42:11] ID:2c87ac2696c549e8 S:2 D:Communication started...
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.108
+Received Auth number: 0
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Already Connected192.168.1.108
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.108
+Received Auth number: 0
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Already Connected192.168.1.108
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.108
+Received Auth number: 0
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Already Connected192.168.1.108
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:0
+Available Welders:0
+Available Welders:1
+WDS: 0 IP: 192.168.1.110
+WDS: 0 ConnStatus: 2
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Logger[2023-08-21 11:44:40] ID:85a97ac03ffb769e S:1 D:BIORead failed,retval -1
+Logger[2023-08-21 11:44:40] ID:2c87ac2696c549e8 S:1 D:Error in processing tx/rx frame
+Logger[2023-08-21 11:44:40] ID:85a97ac03ffb769e S:2 D:Detached:192.168.1.110:8080
+Logger[2023-08-21 11:44:40] ID:2c87ac2696c549e8 S:2 D:Disconnected peer successfully
+Logger[2023-08-21 11:44:40] ID:2c87ac2696c549e8 S:7 D:Comm Thread 0.
+Logger[2023-08-21 11:44:40] ID:2c87ac2696c549e8 S:6 D:Waiting for start request.
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:0
+Available Welders:1
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:0
+Available Welders:1
+WDS: 1 IP: 192.168.1.108
+WDS: 1 ConnStatus: 2
+Logger[2023-08-21 11:44:52] ID:85a97ac03ffb769e S:1 D:BIORead failed,retval -1
+Logger[2023-08-21 11:44:52] ID:2c87ac2696c549e8 S:1 D:Error in processing tx/rx frame
+Logger[2023-08-21 11:44:52] ID:85a97ac03ffb769e S:2 D:Detached:192.168.1.108:8080
+Logger[2023-08-21 11:44:52] ID:2c87ac2696c549e8 S:2 D:Disconnected peer successfully
+Logger[2023-08-21 11:44:52] ID:2c87ac2696c549e8 S:7 D:Comm Thread 1.
+Logger[2023-08-21 11:44:52] ID:2c87ac2696c549e8 S:6 D:Waiting for start request.
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1
+Available Peer IP: 192.168.1.102
+Received Auth number: 63
+Available Welders:1
+Available Welders:1
+Available Welders:1

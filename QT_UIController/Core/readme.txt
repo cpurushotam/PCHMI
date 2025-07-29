@@ -1,0 +1,1 @@
+This folder contains generic or common code applicable for all ultrasonic welding platforms. 
