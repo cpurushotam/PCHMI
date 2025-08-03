@@ -26,9 +26,9 @@ class LanguageConfig : public QObject
     Q_PROPERTY(int CurrentLanguage READ getCurrentLanguage WRITE setCurrentLanguage NOTIFY signalCurrentLanguageChanged)
 public:
     enum FileLoadError {
-        NO_FILE_ERROR   =   0x00, //kb
+        NO_ERROR =          0x00,
         JSON_FILE_ERROR =   0x01,
-        CSV_FILE_ERROR  =   0x02,
+        CSV_FILE_ERROR =    0x02,
     };
 
 private:

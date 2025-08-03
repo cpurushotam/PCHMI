@@ -47,7 +47,7 @@ LanguageConfig::LanguageConfig(QObject *parent)
     , m_LanguageUrl(lanugageUrl)
 	, m_LanguageFiles({"ENGLISH.csv", "FRENCH.csv", "GERMAN.csv", "SPANISH.csv", "KOREAN.csv", "SIMPLIFIEDCHINESE.csv", "ITALIAN.csv", "JAPANESE.csv", "DANISH.csv", "SLOVAKIAN.csv", "POLISH.csv"})
     , m_currentLanguageFile("ENGLISH.csv")
-    , m_ErrorIndicator(LanguageConfig::NO_FILE_ERROR)
+	, m_ErrorIndicator(LanguageConfig::NO_ERROR)
 {
     QDir dir;
     m_pLanguageModelObj = new LanguageModel();
@@ -134,7 +134,7 @@ unsigned char LanguageConfig::loadLanguageStrings()
         m_ErrorIndicator |= LanguageConfig::CSV_FILE_ERROR;
     else
         m_ErrorIndicator &= ~LanguageConfig::CSV_FILE_ERROR;
-    if(m_ErrorIndicator == LanguageConfig::NO_FILE_ERROR)
+    if(m_ErrorIndicator == LanguageConfig::NO_ERROR)
         JsonTreeModel::getInstance()->replaceItemData();
     return m_ErrorIndicator;
 }
@@ -217,7 +217,7 @@ void LanguageConfig::checkLanguageFiles()
         QFile file(m_LanguageUrl + m_LanguageFiles.at(i));
         if(!file.exists())
         {
-            if((loadLanguageJsonFile() & LanguageConfig::JSON_FILE_ERROR) == LanguageConfig::NO_FILE_ERROR)
+            if((loadLanguageJsonFile() & LanguageConfig::JSON_FILE_ERROR) == LanguageConfig::NO_ERROR)
             {
                 QString languageUrl = m_LanguageUrl + m_LanguageFiles.at(i);
                 JsonTreeModel::getInstance()->writeCSVFile(i, languageUrl);
@@ -233,7 +233,7 @@ void LanguageConfig::checkLanguageFiles()
         return;
     }
 
-    if((loadLanguageCSVFiles() & LanguageConfig::CSV_FILE_ERROR) == LanguageConfig::NO_FILE_ERROR)
+    if((loadLanguageCSVFiles() & LanguageConfig::CSV_FILE_ERROR) == LanguageConfig::NO_ERROR)
     {
         int currentLanguage = -1;
         currentLanguage = m_LanguageFiles.indexOf(m_currentLanguageFile);
@@ -326,7 +326,7 @@ unsigned char LanguageConfig::loadLanguageCSVFiles()
 ******************************************************************************/
 QStringList LanguageConfig::getLanguageStringList(int screenIndex, QStringList sourceList)
 {
-    if(m_ErrorIndicator == LanguageConfig::NO_FILE_ERROR)
+    if(m_ErrorIndicator == LanguageConfig::NO_ERROR)
         JsonTreeModel::getInstance()->getItemDatas(screenIndex, sourceList);
     return sourceList;
 }
@@ -346,7 +346,7 @@ QStringList LanguageConfig::getLanguageStringList(int screenIndex, QStringList s
 ******************************************************************************/
 QString LanguageConfig::getLanguageMenuName(int screenIndex, QString sourceName)
 {
-    if(m_ErrorIndicator == LanguageConfig::NO_FILE_ERROR)
+    if(m_ErrorIndicator == LanguageConfig::NO_ERROR)
         JsonTreeModel::getInstance()->getItemData(screenIndex, sourceName);
     return sourceName;
 }

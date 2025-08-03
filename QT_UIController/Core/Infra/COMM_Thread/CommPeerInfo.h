@@ -90,7 +90,7 @@ enum CONFIG_STATES
     E_NO_CONN = 0,              /* No Welder connected */
     E_IN_PROCESS,               /* Configuration validation Inprocess */
     E_SUCCESS,                  /* Configuration validation success */
-    E_CONFIG_FAIL            //kb          /* Configuration validation failed */
+    E_FAIL                      /* Configuration validation failed */
 };
 
 // PeerInfo class defination

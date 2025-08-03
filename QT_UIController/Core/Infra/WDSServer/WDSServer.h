@@ -26,16 +26,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string.h>
-
-
-#ifdef _WIN32
-#include <winsock2.h>
-#include <ws2tcpip.h>
-#include <windows.h>
-#include <mutex>
-#pragma comment(lib, "ws2_32.lib")
-typedef int socklen_t;
-#else
+#include <unistd.h>
 
 /* socket related header file */
 #include <fcntl.h>
@@ -43,8 +34,6 @@ typedef int socklen_t;
 #include <sys/types.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
-#include <unistd.h>
-#endif
 
 #include "DataLogger.h"
 #include "version_common.h"
@@ -119,11 +108,7 @@ class WDSServer : public QThread
     std::vector<std::string>        m_WelderBlackList;                          /* List of blacklisted welder */
 
     uint16_t            m_FreeWelders[CONFIG_MAX_WELDERS];                      /* Array to identify which welder is available */
-#ifdef _WIN32
-    mutable std::mutex m_DiscoveryInfoMutex;
-#else
     pthread_mutex_t     m_DiscoveryInfoMutex = PTHREAD_MUTEX_INITIALIZER;       /* locks for Read/write of DiscoveryInfoTable */
-#endif
 
     // Members variable defined for logger feature.
     size_t              m_LogId;                                    /* log identifier */

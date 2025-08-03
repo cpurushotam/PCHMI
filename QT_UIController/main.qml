@@ -1,13 +1,13 @@
 /**************************************************************************
 
-ï¿½ï¿½ï¿½ï¿½ï¿½ Copyright (c) Branson Ultrasonics Corporation, 1996-2023
+      Copyright (c) Branson Ultrasonics Corporation, 1996-2023
 
-ï¿½ï¿½ï¿½ï¿½ This program is the property of Branson Ultrasonics Corporation
-ï¿½ï¿½ï¿½ï¿½ Copying of this software is expressly forbidden, without the prior
-ï¿½ï¿½ï¿½ï¿½ written consent of Branson Ultrasonics Corporation.
+     This program is the property of Branson Ultrasonics Corporation
+     Copying of this software is expressly forbidden, without the prior
+     written consent of Branson Ultrasonics Corporation.
 
 ---------------------------- MODULE DESCRIPTION ----------------------------
-ï¿½ï¿½ï¿½ main.qml file handles loading and handling of functions which are
+    main.qml file handles loading and handling of functions which are
     accessible from all qml's.
 
 --------------------------- REVISION HISTORY ------------------------------
@@ -32,7 +32,6 @@ import "./Core/Logic/Front_End_Logic/System_screens"
 import "./Core/Logic/Front_End_Logic/Diagnostics_Screens"
 import "./Core/Logic/Front_End_Logic/Alarm_Screens"
 import "./Core/Logic/Front_End_Logic/Actuator_Setup_Screens"
-import "./Core/Logic/Front_End_Logic/Dashboard_Screens"
 
 import Style 1.0
 import NumpadDefine 1.0
@@ -45,16 +44,10 @@ Window{
     visible: true
     width: Screen.width
     height: Screen.height
-    //flags: Qt.frame
     title: qsTr("UIController")
-    //  flags: Qt.WindowStaysOnTopHint | Qt.FramelessWindowHint | Qt.Window
+    //    flags: Qt.WindowStaysOnTopHint | Qt.FramelessWindowHint | Qt.Window
     //    flags: Qt.FramelessWindowHint | Qt.Window
-    //visibility: Window.FullScreen
-    onWidthChanged:
-    {
-        Style.scaleHint = (width/1024)
-    }
-
+    visibility: Window.FullScreen
 
     /*1366 * 768 = 1280 * 800    1920 * 1080    800 * 480  */
     property int showWidth: (isRaspPI) ? 800 : 1024
@@ -79,7 +72,7 @@ Window{
 
     property string qmltextNoData : "NO DATA"
     property string qmltextNoDataMsg :  "No Data Available for this Cycle Counter."
-    property bool   configurationFailed: false
+    property bool   configurationFailed: true
     property int 	currentIndex : -1
     property bool isloaded: true
     property string qmltextactivewelderName:         "Welder "
@@ -214,8 +207,6 @@ signal loginUserNameAndUserLevelUpdated()
     Component.onCompleted: {
 
         console.log("Completed!")
-        menuParentOptionSelect(UIScreenEnum.DASHBOARD)
-
         //            VirtualKeyboardSettings.locale = sysconfig.getLanguageCode()
         //            VirtualKeyboardSettings.locale = "en_US"
     }
@@ -548,14 +539,7 @@ signal loginUserNameAndUserLevelUpdated()
             configLayout.visible =false
             // configurationFailed = false
             isLoggedIn = true
-            if(isRaspPI)
-            {
-                menuParentOptionSelect(UIScreenEnum.PRODUCTION)
-            }
-            else
-            {
-                menuParentOptionSelect(UIScreenEnum.DASHBOARD)
-            }
+            menuParentOptionSelect(UIScreenEnum.PRODUCTION)
             loginUserNameAndUserLevelUpdated()
            setLogoutTimer()
             break;
@@ -686,9 +670,6 @@ signal loginUserNameAndUserLevelUpdated()
                 break;
             case UIScreenEnum.PRODUCTION:
                 stackMainView.push("qrc:/Core/Logic/Front_End_Logic/Production_Screens/productionWindow.qml", {}, StackView.Immediate)
-                break;
-            case UIScreenEnum.DASHBOARD:
-                stackMainView.push("qrc:/Core/Logic/Front_End_Logic/Dashboard_Screens/DashboardWindow.qml", {}, StackView.Immediate)
                 break;
             case UIScreenEnum.ANALYTICS:
                 stackMainView.push("qrc:/Core/Logic/Front_End_Logic/Analytics_Screens/AnalyticsWindow.qml", {}, StackView.Immediate)
@@ -1391,16 +1372,7 @@ signal loginUserNameAndUserLevelUpdated()
             {
                 if(Screen.width !== showWidth)
                 {
-                    if(!isRaspPI)
-                    {
-                        console.log("***** Target is Desktop, Window width == Screen Width ****")
-                        Style.scaleHint = 1.6
-                        mainWindow.showWidth = Screen.width
-                        mainWindow.showHeight = Screen.height
-                        console.log("**** Scale hint === ", Style.scaleHint)
-                    }
-
-                    else if(Screen.width > 1279 && Screen.width < 1901) //1366 X 768 or 1280 X 800 10inches
+                    if(Screen.width > 1279 && Screen.width < 1901) //1366 X 768 or 1280 X 800 10inches
                     {
                         console.debug("1366 X 768 10inches screen resolution:", Screen.width)
                         Style.scaleHint = 1.6
@@ -1422,7 +1394,6 @@ signal loginUserNameAndUserLevelUpdated()
                     }
                 }
             }
-
 
             else
             {
@@ -1496,7 +1467,6 @@ signal loginUserNameAndUserLevelUpdated()
             anchors.bottomMargin: parent.height*0.10
             width: parent.width
         }
-
 
         Rectangle
         {
@@ -1865,7 +1835,7 @@ signal loginUserNameAndUserLevelUpdated()
     ConfigStatus
     {
         id: configLayout
-        visible: false
+        visible: true
         anchors.centerIn: parent
         width: mainWindow.width
         height: mainWindow.height

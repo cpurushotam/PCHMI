@@ -267,8 +267,5 @@
         <file>Core/Logic/Front_End_Logic/System_screens/NetWorkConfigNFSSetup.qml</file>
         <file>Core/Logic/Front_End_Logic/System_screens/USBAuthentication.qml</file>
         <file>Core/Logic/Front_End_Logic/System_screens/USBDeAuthentication.qml</file>
-        <file>Core/Logic/Front_End_Logic/Dashboard_Screens/DashboardWindow.qml</file>
-        <file>Core/Logic/Front_End_Logic/Dashboard_Screens/ArcProgressBar.qml</file>
-        <file>Core/Logic/Front_End_Logic/Dashboard_Screens/DashBoardWelderDelegate.qml</file>
     </qresource>
 </RCC>

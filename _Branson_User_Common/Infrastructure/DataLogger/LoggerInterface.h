@@ -19,16 +19,7 @@
 
 #include <sstream>
 #include <ctime>
-
-#ifdef _WIN32
-#include <queue>
-#include <mutex>
-#include <condition_variable>
-typedef std::queue<std::string>* MsgQueueHandle;
-#else
 #include <mqueue.h>
-typedef mqd_t MsgQueueHandle;
-#endif
 
 #include "LoggerCommon.h"
 #include "Common_Definitions.h"
@@ -37,8 +28,8 @@ typedef mqd_t MsgQueueHandle;
 
 typedef enum
 {
-    OK = 0,
-    ERROR = -1
+	OK = 0,
+	ERROR = -1
 }LOGGER_ERROR_CODES;
 
 // Message queue OFFSETS
@@ -52,22 +43,17 @@ class LoggerInterface
     char m_MsgBuffer[MAX_SIZE_OF_MSG_LENGTH] = {0x00};
 protected:
     //Initialize message queue descriptor
-    MsgQueueHandle m_MqID = 0;
-
-#ifdef _WIN32
-    std::mutex m_queueMutex;
-    std::condition_variable m_queueCV;
-#endif
-
+    mqd_t m_MqID = 0;
+    
     int         CreateMsgQ    (const char *key);
-    int         SendMsgQ      (MsgQueueHandle  MsgID, LogEntry *log_entry, uint32_t msg_len);
+    int         SendMsgQ      (mqd_t MsgID, LogEntry *log_entry, uint32_t msg_len);
     std::string ReceiveMsgQ   ();
     std::string LogEntryToStr (char *log_entry);
 public:
-
+   
     virtual ~LoggerInterface() = default;
     virtual void Init()     = 0;
-    virtual void AddEntry(LogEntry* log_entry, uint32_t msg_len) = 0;
+    virtual void AddEntry(LogEntry* log_entry, uint32_t msg_len) = 0;    
 };
 
 #endif // LOGGERINTERFACE_H

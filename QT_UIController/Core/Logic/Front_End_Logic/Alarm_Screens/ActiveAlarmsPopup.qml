@@ -608,7 +608,7 @@ Popup
             font
             {
                 family: Style.regular.name
-                pixelSize: Math.round(style.style2 * Style.scaleHint)
+                pixelSize: Math.round(Style.style2 * Style.scaleHint)
             }
         }
 
