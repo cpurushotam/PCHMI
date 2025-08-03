@@ -36,10 +36,9 @@ typedef enum
 	PDF
 } REPORT_FORMATS;
 
-typedef enum
-{
+typedef enum {
 	NOT_DELETE,
-    IS_DELETE //kb
+	DELETE
 } DELETION_STATUS;
 
 typedef enum

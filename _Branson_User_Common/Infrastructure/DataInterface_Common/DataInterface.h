@@ -23,7 +23,7 @@
 
 #include <iostream>
 #include "DataInterface_id.h"
-#include <cstdint>
+
 #define VALID_BIT (0x1)    //valid bit for config element in memory block
 #define ONE_TIME_USE (0x2) //one time use bit for config element in memory block
 

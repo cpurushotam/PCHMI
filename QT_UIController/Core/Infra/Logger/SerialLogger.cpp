@@ -25,10 +25,7 @@
 SerialLogger::SerialLogger()
 {
     // Initialize message queue for serial logger
-    // Init();
-
-    // SerialLogger* logger = new SerialLogger();
-    // logger->Init();
+    Init();
 }
 
 /**************************************************************************//**

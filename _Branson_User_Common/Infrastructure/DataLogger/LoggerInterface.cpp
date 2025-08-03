@@ -15,12 +15,7 @@
 ***************************************************************************/
 
 #include "LoggerInterface.h"
-#ifdef _WIN32
-#include <map>
-#include <string>
-static std::map<std::string, std::queue<std::string>*> namedQueues;
-static std::mutex namedQueuesMutex;
-#endif
+
 static constexpr int datetime_buffSize = 100;
 static char DateTimeBuff[datetime_buffSize];
 
@@ -44,7 +39,7 @@ const std::string LoggerInterface::currentDateTime()
 
 /**************************************************************************//**
 *
-* \brief   - Create message queue for logger
+* \brief   - Create message queue for logger 
 *
 * \param   - Logger Name - Logger entry(e.g E_LOG_ALARM, E_LOG_EVENT etc.)
 *
@@ -53,18 +48,8 @@ const std::string LoggerInterface::currentDateTime()
 ******************************************************************************/
 int LoggerInterface::CreateMsgQ(const char* LoggerName)
 {
-#ifdef _WIN32
-    std::lock_guard<std::mutex> lock(namedQueuesMutex);
-    std::string name(LoggerName ? LoggerName : "");
-    auto it = namedQueues.find(name);
-    if (it == namedQueues.end())
-    {
-        namedQueues[name] = new std::queue<std::string>();
-    }
-    m_MqID = namedQueues[name];
-    return (m_MqID != nullptr) ? OK : ERROR;
-#else
     int status = ERROR;
+
     // Initialize the queue attributes
     struct mq_attr m_mqAttr;
 
@@ -84,34 +69,22 @@ int LoggerInterface::CreateMsgQ(const char* LoggerName)
         perror("mq_open: ");
     }
     return status;
-#endif
 }
 
 /**************************************************************************//**
 *
-* \brief   - Send logger message to the queue
+* \brief   - Send logger message to the queue 
 *
 * \param   - MsgID     - Unique Message ID.
 * 			 log_entry - Logger entry(e.g E_LOG_ALARM, E_LOG_EVENT etc.)
 * 			 msg_Len   - Length of message.
-*
+* 
 * \return  -  0 if success, -1 if failed.
 *
 ******************************************************************************/
-int LoggerInterface::SendMsgQ(MsgQueueHandle MsgID, LogEntry *log_entry, uint32_t msg_len)
+int LoggerInterface::SendMsgQ(mqd_t MsgID, LogEntry *log_entry, uint32_t msg_len)
 {
     int status = OK;
-
-#ifdef _WIN32
-    if (!MsgID) return ERROR;
-    std::string logMsg(reinterpret_cast<char*>(log_entry), msg_len);
-    {
-        std::lock_guard<std::mutex> lock(m_queueMutex);
-        MsgID->push(logMsg);
-    }
-    m_queueCV.notify_one();
-    return OK;
-#else
     const char* msg_ptr = reinterpret_cast<char *>(log_entry);
     if (mq_send(MsgID, msg_ptr, msg_len, 0) == ERROR)
     {
@@ -119,12 +92,11 @@ int LoggerInterface::SendMsgQ(MsgQueueHandle MsgID, LogEntry *log_entry, uint32_
         std::cout << "mq_send failed \n";
     }
     return status;
-#endif
 }
 
 /**************************************************************************//**
 *
-* \brief   - Receive logger message from the queue
+* \brief   - Receive logger message from the queue 
 *
 * \param   - None
 *
@@ -134,14 +106,6 @@ int LoggerInterface::SendMsgQ(MsgQueueHandle MsgID, LogEntry *log_entry, uint32_
 std::string LoggerInterface::ReceiveMsgQ()
 {
     std::string Msg;
-
-#ifdef _WIN32
-    std::unique_lock<std::mutex> lock(m_queueMutex);
-    m_queueCV.wait(lock, [this] { return m_MqID && !m_MqID->empty(); });
-    std::string msg = m_MqID->front();
-    m_MqID->pop();
-    return msg;
-#else
     int status = mq_receive(m_MqID, m_MsgBuffer, MAX_SIZE_OF_MSG_LENGTH, NULL);
     if( status != ERROR)
     {
@@ -152,7 +116,6 @@ std::string LoggerInterface::ReceiveMsgQ()
         std::cout << "mq_receive failed: \n" << status;
     }
     return Msg;
-#endif
 }
 
 /**************************************************************************//**

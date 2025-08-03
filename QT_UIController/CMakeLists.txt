@@ -12,20 +12,19 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Quick)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick)
 find_package(Qt6 REQUIRED COMPONENTS Charts)
-# find_package(OpenSSL REQUIRED) #kb
 
-include_directories(${CMAKE_SOURCE_DIR}/../_Branson_User_Common/Infrastructure/BIOWrapper)
-include_directories(${CMAKE_SOURCE_DIR}/../_Branson_User_Common/Infrastructure/COMM_Class)
-include_directories(${CMAKE_SOURCE_DIR}/../_Branson_User_Common/Infrastructure/Logger)
-include_directories(${CMAKE_SOURCE_DIR}/../_Branson_User_Common/Infrastructure/DataInterface_Common)
-include_directories(${CMAKE_SOURCE_DIR}/../_Branson_User_Common/Infrastructure/EncryptionDecryption)
-include_directories(${CMAKE_SOURCE_DIR}/../_Branson_User_Common/Infrastructure/PlatformConfigLogic)
-include_directories(${CMAKE_SOURCE_DIR}/../_Branson_User_Common/Commons)
-include_directories(${CMAKE_SOURCE_DIR}/../_Branson_User_Common/Platform/ACE/Logic/Common)
-include_directories(${CMAKE_SOURCE_DIR}/../_Branson_User_Common/Platform/ACE/Infra/DataInterfaceCommon)
-include_directories(${CMAKE_SOURCE_DIR}/../_Branson_User_Common/Platform/ACE/Infra/PlatformConfig)
-include_directories(${CMAKE_SOURCE_DIR}/../_Branson_User_Common/Platform/ACE/Infra/AlarmManager)
-include_directories(${CMAKE_SOURCE_DIR}/../_Branson_User_Common/Infrastructure/DataLogger)
+include_directories(../../../_Branson_User_Common/Infrastructure/BIOWrapper)
+include_directories(../../../_Branson_User_Common/Infrastructure/COMM_Class)
+include_directories(../../../_Branson_User_Common/Infrastructure/Logger)
+include_directories(../../../_Branson_User_Common/Infrastructure/DataInterface_Common)
+include_directories(../../../_Branson_User_Common/Infrastructure/EncryptionDecryption)
+include_directories(../../../_Branson_User_Common/Infrastructure/PlatformConfigLogic)
+include_directories(../../../_Branson_User_Common/Commons)
+include_directories(../../../_Branson_User_Common/Platform/ACE/Logic/Common)
+include_directories(../../../_Branson_User_Common/Platform/ACE/Infra/DataInterfaceCommon)
+include_directories(../../../_Branson_User_Common/Platform/ACE/Infra/PlatformConfig)
+include_directories(../../../_Branson_User_Common/Platform/ACE/Infra/AlarmManager)
+include_directories(../../../_Branson_User_Common/Infrastructure/DataLogger)
 
 include_directories(Core/Infra/COMM_Thread)
 include_directories(Core/Infra/BgCommThread)
@@ -540,116 +539,35 @@ else()
     endif()
 endif()
 
-# if(WIN32)
-# message(STATUS "Configuring OpenSSL manually for Windows...")
+target_link_libraries(QT_UIController
+  PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick -lrt
 
-# set(OPENSSL_ROOT_DIR "C:/Program Files/OpenSSL-Win64")
-# set(OPENSSL_INCLUDE_DIR "${OPENSSL_ROOT_DIR}/include")
-# set(OPENSSL_CRYPTO_LIBRARY "${OPENSSL_ROOT_DIR}/lib/VC/x64/MD/libcrypto.lib")
-# set(OPENSSL_SSL_LIBRARY "${OPENSSL_ROOT_DIR}/lib/VC/x64/MD/libssl.lib")
+  # For Desktop Kit
+      /usr/lib/x86_64-linux-gnu/libssl.a
+      /usr/lib/x86_64-linux-gnu/libcrypto.a ${CMAKE_DL_LIBS})
 
-# # Manually create OpenSSL::Crypto and OpenSSL::SSL targets
-# add_library(OpenSSL::Crypto STATIC IMPORTED)
-# set_target_properties(OpenSSL::Crypto PROPERTIES
-#     IMPORTED_LOCATION "${OPENSSL_CRYPTO_LIBRARY}"
-#     INTERFACE_INCLUDE_DIRECTORIES "${OPENSSL_INCLUDE_DIR}"
-# )
+  # For Ras-Pi Kit
+#    /media/kshitij/Computer2/GSX-ACE_PRO_Build_Env_Qt-6.2.7/rpi-sysroot/usr/lib/aarch64-linux-gnu/libssl.a
+#    /media/kshitij/Computer2/GSX-ACE_PRO_Build_Env_Qt-6.2.7/rpi-sysroot/usr/lib/aarch64-linux-gnu/libcrypto.a ${CMAKE_DL_LIBS})
 
-# add_library(OpenSSL::SSL STATIC IMPORTED)
-# set_target_properties(OpenSSL::SSL PROPERTIES
-#     IMPORTED_LOCATION "${OPENSSL_SSL_LIBRARY}"
-#     INTERFACE_INCLUDE_DIRECTORIES "${OPENSSL_INCLUDE_DIR}"
-# )
-# endif()
+  #For TI Kit
+#/media/kshitij/Computer2/QT6_RENU/SSLLibs/libssl.a
+#/media/kshitij/Computer2/QT6_RENU/SSLLibs/libcrypto.a ${CMAKE_DL_LIBS})
 
-# --- OpenSSL and System Linking (Platform-Specific) ---
-if(WIN32)
-    message(STATUS "Configuring OpenSSL manually for Windows...")
+target_link_libraries(QT_UIController PRIVATE Qt6::Charts)
+set_target_properties(QT_UIController PROPERTIES
+    MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
+    MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
+    MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
+    MACOSX_BUNDLE TRUE
+    WIN32_EXECUTABLE TRUE
+)
 
-    set(OPENSSL_ROOT_DIR "C:/Program Files/OpenSSL-Win64")
-    set(OPENSSL_INCLUDE_DIR "${OPENSSL_ROOT_DIR}/include")
-    set(OPENSSL_CRYPTO_LIBRARY "${OPENSSL_ROOT_DIR}/lib/VC/x64/MD/libcrypto.lib")
-    set(OPENSSL_SSL_LIBRARY "${OPENSSL_ROOT_DIR}/lib/VC/x64/MD/libssl.lib")
+install(TARGETS QT_UIController
+    BUNDLE DESTINATION .
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
 
-    include_directories(${OPENSSL_INCLUDE_DIR})
-
-    add_library(OpenSSL::Crypto STATIC IMPORTED)
-    set_target_properties(OpenSSL::Crypto PROPERTIES
-        IMPORTED_LOCATION "${OPENSSL_CRYPTO_LIBRARY}"
-        INTERFACE_INCLUDE_DIRECTORIES "${OPENSSL_INCLUDE_DIR}"
-    )
-
-    add_library(OpenSSL::SSL STATIC IMPORTED)
-    set_target_properties(OpenSSL::SSL PROPERTIES
-        IMPORTED_LOCATION "${OPENSSL_SSL_LIBRARY}"
-        INTERFACE_INCLUDE_DIRECTORIES "${OPENSSL_INCLUDE_DIR}"
-    )
- target_link_libraries(QT_UIController
-         PRIVATE
-             Qt${QT_VERSION_MAJOR}::Core
-             Qt${QT_VERSION_MAJOR}::Quick
-             OpenSSL::Crypto
-             OpenSSL::SSL
-             Qt6::Charts
-     )
- else()
-     target_link_libraries(QT_UIController
-         PRIVATE
-             Qt${QT_VERSION_MAJOR}::Core
-             Qt${QT_VERSION_MAJOR}::Quick
-             -lrt
-             /usr/lib/x86_64-linux-gnu/libssl.a
-             /usr/lib/x86_64-linux-gnu/libcrypto.a
-             ${CMAKE_DL_LIBS}
-             Qt6::Charts
-     )
- endif()
-
- set_target_properties(QT_UIController PROPERTIES
-     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
-     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
-     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
-     MACOSX_BUNDLE TRUE
-     WIN32_EXECUTABLE TRUE
- )
-
- install(TARGETS QT_UIController
-     BUNDLE DESTINATION .
-     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
-
- if(QT_VERSION_MAJOR EQUAL 6)
-     qt_import_qml_plugins(QT_UIController)
-     qt_finalize_executable(QT_UIController)
- endif()
-# target_link_libraries(QT_UIController
-#   PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick -lrt
-
-#   # For Desktop Kit
-#       /usr/lib/x86_64-linux-gnu/libssl.a
-#       /usr/lib/x86_64-linux-gnu/libcrypto.a ${CMAKE_DL_LIBS})
-
-#   # For Ras-Pi Kit
-# #    /media/kshitij/Computer2/GSX-ACE_PRO_Build_Env_Qt-6.2.7/rpi-sysroot/usr/lib/aarch64-linux-gnu/libssl.a
-# #    /media/kshitij/Computer2/GSX-ACE_PRO_Build_Env_Qt-6.2.7/rpi-sysroot/usr/lib/aarch64-linux-gnu/libcrypto.a ${CMAKE_DL_LIBS})
-
-#   #For TI Kit
-# #/media/kshitij/Computer2/QT6_RENU/SSLLibs/libssl.a
-# #/media/kshitij/Computer2/QT6_RENU/SSLLibs/libcrypto.a ${CMAKE_DL_LIBS})
-
-# target_link_libraries(QT_UIController PRIVATE Qt6::Charts)
-# set_target_properties(QT_UIController PROPERTIES
-#     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
-#     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
-#     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
-#     MACOSX_BUNDLE TRUE
-#     WIN32_EXECUTABLE TRUE
-# )
-
-# install(TARGETS QT_UIController
-#     BUNDLE DESTINATION .
-#     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
-
-# if(QT_VERSION_MAJOR EQUAL 6)
-#     qt_import_qml_plugins(QT_UIController)
-#     qt_finalize_executable(QT_UIController)
-# endif()
+if(QT_VERSION_MAJOR EQUAL 6)
+    qt_import_qml_plugins(QT_UIController)
+    qt_finalize_executable(QT_UIController)
+endif()

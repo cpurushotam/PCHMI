@@ -55,13 +55,6 @@ WDSServer* WDSServer::WdsInstance = nullptr;
 ******************************************************************************/
 WDSServer::WDSServer()
 {
-#ifdef _WIN32
-    WSADATA wsaData;
-    if (WSAStartup(MAKEWORD(2,2), &wsaData) != 0)
-    {
-        throw std::runtime_error("WSAStartup failed");
-    }
-#endif
     // Initialize log ID
     this->m_LogId = Logger::enroll(this);
 
@@ -90,35 +83,20 @@ WDSServer::WDSServer()
     // Log Alarm
     snprintf ( this->m_LogBuffer, buff_size_config, "WDS Server SockFd: %d", m_SockFd);
     Logger::add_entry(E_SEVERITY::E_LOG_ALARM, (this->m_LogBuffer));
-#ifdef _WIN32
-    if (setsockopt(m_SockFd, SOL_SOCKET, SO_BROADCAST, (const char*)&BROADCAST, sizeof(BROADCAST)) < 0)
-#else
+
     if (setsockopt(m_SockFd, SOL_SOCKET, SO_BROADCAST, &BROADCAST, sizeof(BROADCAST)) < 0)
-#endif
     {
         // raise error
         throw std::runtime_error("Failed to set socket broadcast");
     }
 
     const int enable = 1;
-#ifdef _WIN32
-    if (setsockopt(m_SockFd, SOL_SOCKET, SO_BROADCAST, (const char*)&enable, sizeof(enable)) < 0)
-#else
     if (setsockopt(m_SockFd, SOL_SOCKET, SO_REUSEADDR, &enable, sizeof(int)) < 0)
-#endif
     {
         // raise error
         throw std::runtime_error("Failed to setsockopt SO_REUSEADDR");
     }
 
-#ifdef _WIN32
-    u_long mode = 1;
-    if (ioctlsocket(m_SockFd, FIONBIO, &mode) == SOCKET_ERROR)
-    {
-        int err = WSAGetLastError();
-        throw std::runtime_error("ioctlsocket FIONBIO failed, WSAGetLastError=" + std::to_string(err));
-    }
-#else
     // get default flags
     int flags = fcntl(m_SockFd, F_GETFL, 0);
     if(flags<0)
@@ -133,7 +111,7 @@ WDSServer::WDSServer()
         // raise error
         throw std::runtime_error("Error: set own socket to non-blocking");
     }
-#endif
+
     m_SelfAddr.sin_family      = AF_INET; // IPv4
     m_SelfAddr.sin_addr.s_addr = INADDR_ANY;
     m_SelfAddr.sin_port        = htons(WDS_PORT_SERVER);
@@ -147,20 +125,11 @@ WDSServer::WDSServer()
     // Filling broadcast address information
     m_BroadcastAddr.sin_family = AF_INET;
     m_BroadcastAddr.sin_port = htons(WDS_PORT_CLIENT);
-
-#ifdef _WIN32
-    m_BroadcastAddr.sin_addr.s_addr = inet_addr(BROADCAST_IP_ADDR);
-    if (m_BroadcastAddr.sin_addr.s_addr == INADDR_NONE)
-    {
-        throw std::runtime_error("Error: Invalid IP format");
-    }
-#else
     if(inet_aton(BROADCAST_IP_ADDR, &m_BroadcastAddr.sin_addr) <0)
     {
         // raise error
         throw std::runtime_error("Error: Invalid IP format");
     }
-#endif
 }
 
 /**************************************************************************//**
@@ -214,17 +183,8 @@ void WDSServer::run()
                     m_ptrBrodcastMsg->AuthNumber = RandomNumber;
                     strncpy(m_ptrBrodcastMsg->FirmwareVersion, " ", FIRMWARE_VERSION_SIZE - 1);
                     m_ptrBrodcastMsg->HmiType = hmiType;
-#ifdef _WIN32
-                    status = sendto(m_SockFd,
-                        (const char*)m_TxBuff,/* buffer as const char* */
-                        BUFF_SIZE,
-                        0,
-                        (struct sockaddr*)&m_BroadcastAddr,
-                        (int)m_AddrLen               // cast to int
-                        );
-#else
+
                     status = sendto(m_SockFd, (void *) m_TxBuff, BUFF_SIZE , 0, (struct sockaddr*)&m_BroadcastAddr, m_AddrLen);
-#endif
                     if(status < 0)
                     {
                         // Log Alarm
@@ -246,27 +206,15 @@ void WDSServer::run()
                 {
                     memset(m_RxBuff, 0,BUFF_SIZE);
                     memset(&m_PeerAddr,0, m_AddrLen);
-#ifdef _WIN32
-                    status = recvfrom(m_SockFd, (char*) m_RxBuff, BUFF_SIZE, 0, (struct sockaddr*)&m_PeerAddr, (int*)&m_AddrLen);
-#else
 
                     status = recvfrom(m_SockFd,(void *) m_RxBuff, BUFF_SIZE, 0, (struct sockaddr*)&m_PeerAddr, &m_AddrLen);
-#endif
 
                     if(status<0)
                     {
-#ifdef _WIN32
-                        int lastErr = WSAGetLastError();
-                        if(lastErr == WSAEWOULDBLOCK || lastErr == WSAEINPROGRESS)
-                        {
-                            // No data, do nothing, try again
-                        }
-#else
                         if(errno == EWOULDBLOCK || errno == EAGAIN)
                         {
                             // No data, do nothing, try again
                         }
-#endif
                         else
                         {
                             // Log Alarm
@@ -301,11 +249,7 @@ void WDSServer::run()
                         		FoundNewIP = false; //To avoid IP blacklisting make it false
                         		// Convert IP address to string
                         		char ipStr[INET_ADDRSTRLEN] = "";
-#ifdef _WIN32
-                                strncpy(ipStr, inet_ntoa(m_PeerAddr.sin_addr), INET_ADDRSTRLEN - 1);
-#else
                         		inet_ntop(AF_INET, &(m_PeerAddr.sin_addr), ipStr, INET_ADDRSTRLEN);
-#endif
 
                                 snprintf(this->m_LogBuffer, buff_size_config, "FW maj/min version mismatch for IP: %s, ASC: %s, HMI: %s", ipStr, m_ptrPeerResponseMsg->FirmwareVersion, GenerateHMIFirmwareVersionString().c_str());
                         		Logger::add_entry(E_SEVERITY::E_LOG_WARN, this->m_LogBuffer);
@@ -358,11 +302,8 @@ void WDSServer::run()
                                     Logger::add_entry(E_SEVERITY::E_LOG_EVENT, (this->m_LogBuffer));
 
                                     /* Lock Discovery Info Table to insert connection details of welder */
-#ifdef _WIN32
-                                    std::lock_guard<std::mutex> lock(m_DiscoveryInfoMutex);
-#else
                                     pthread_mutex_lock(&m_DiscoveryInfoMutex);
-#endif
+
                                     /* Connection details inserted into Discovery Info Table */
                                     m_DiscoveryInfoTable[WelderId] =  ConnDetails;
 
@@ -370,11 +311,7 @@ void WDSServer::run()
                                     CommPeerWrapper::GetPeerData(WelderId)->TriggerStartRequest(ConnDetails.IpAddr);
 
                                     /* Unlock Discovery Info Table */
-#ifdef _WIN32
-                                    // lock_guard unlocks automatically
-#else
                                     pthread_mutex_unlock(&m_DiscoveryInfoMutex);
-#endif
                                 }
                             }
 
@@ -456,11 +393,8 @@ WDSServer *WDSServer::GetInstance()
 void WDSServer::SetPeerConnStatus(uint16_t WelderId, CONN_STATUS ConnStatus)
 {
     /* Lock discovery info table to update status */
-#ifdef _WIN32
-    std::lock_guard<std::mutex> lock(m_DiscoveryInfoMutex);
-#else
     pthread_mutex_lock(&m_DiscoveryInfoMutex);
-#endif
+
     /* Check connection status of welder if welder failed to connect then it will be blacklisted */
     if (ConnStatus == BLACKLIST)
     {
@@ -483,11 +417,7 @@ void WDSServer::SetPeerConnStatus(uint16_t WelderId, CONN_STATUS ConnStatus)
     }
 
     /* Unlock discovery info table. */
-#ifdef _WIN32
-    //nothing do unlock automatically
-#else
     pthread_mutex_unlock(&m_DiscoveryInfoMutex);
-#endif
 
     if (ConnStatus == SUCCESS)
     {
@@ -509,11 +439,7 @@ void WDSServer::UpdateDiscoveryInfoTable(uint16_t WelderId)
     emit PeerDisconnected(m_DiscoveryInfoTable[WelderId].IpAddr);
 
     /* Lock discovery info table to remove welder information */
-#ifdef _WIN32
-    std::lock_guard<std::mutex> lock(m_DiscoveryInfoMutex);
-#else
     pthread_mutex_lock(&m_DiscoveryInfoMutex);
-#endif
 
     // Removed WelderId is available to connect
     m_FreeWelders[WelderId] = 1;
@@ -522,11 +448,7 @@ void WDSServer::UpdateDiscoveryInfoTable(uint16_t WelderId)
     m_DiscoveryInfoTable.erase(WelderId);
 
     /* Unlock discovery info table. */
-#ifdef _WIN32
-    //nothing do unlock automatically
-#else
     pthread_mutex_unlock(&m_DiscoveryInfoMutex);
-#endif
 }
 
 /**************************************************************************//**
@@ -588,14 +510,7 @@ std::string WDSServer::GenerateHMIFirmwareVersionString()
 ******************************************************************************/
 WDSServer::~WDSServer()
 {
-#ifdef _WIN32
-    WSACleanup();
-#endif
     delete m_ptrBrodcastMsg;
     delete m_ptrPeerResponseMsg;
-#ifdef _WIN32
-    closesocket(m_SockFd);
-#else
     close(m_SockFd);
-#endif
 }

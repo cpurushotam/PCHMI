@@ -33,7 +33,7 @@ private:
 	typedef enum{
         E_WAITING_FOR_CONFIG = 1,       /* Waiting for configuration from ASC */
         E_SUCCESS,                      /* Configuration validation success */
-        E_STATES_FAIL            //kb              /* Configuration validation failed */
+        E_FAIL                          /* Configuration validation failed */
 	}STATES;
 
     /* possible response states of PlatformConfig class */

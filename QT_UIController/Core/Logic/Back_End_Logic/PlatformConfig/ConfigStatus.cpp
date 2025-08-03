@@ -48,7 +48,7 @@ ConfigStatus::ConfigStatus()
 void ConfigStatus::onSelectWelderIndexChanged(int WelderId)
 {
     char msg[50]={0};
-    int ConfigState =  E_CONFIG_FAIL;
+    int ConfigState =  E_FAIL;
 
     int active_welder_id = MultiwelderInterface::GetActiveWelder();
 
@@ -61,10 +61,10 @@ void ConfigStatus::onSelectWelderIndexChanged(int WelderId)
             case E_SUCCESS:
                 ConfigState = E_SUCCESS;
                 break;
-            case E_CONFIG_FAIL:
+            case E_FAIL:
                 sprintf(msg, "%s %d : %s", m_LangList[WelderNameTextIdx].toStdString().c_str(), WelderId+1, m_LangList[ConfigFailTextIdx].toStdString().c_str());
                 m_StatusMsg = msg;
-                ConfigState = E_CONFIG_FAIL;
+                ConfigState = E_FAIL;
                 break;
             case E_IN_PROCESS:
                 sprintf(msg, "%s %d : %s", m_LangList[WelderNameTextIdx].toStdString().c_str(), WelderId+1, m_LangList[ConfigWaitingTextIdx].toStdString().c_str());

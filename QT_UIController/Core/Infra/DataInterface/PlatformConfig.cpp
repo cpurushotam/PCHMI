@@ -153,7 +153,7 @@ int PlatformConfig::GetData(MEMORY_BLOCK * const destination)
                 break;
             }
 
-            case STATES::E_STATES_FAIL:
+            case STATES::E_FAIL:
             {
                 if(destination->size >= sizeof(HMIConfigJSON))
                 {
@@ -253,7 +253,7 @@ int PlatformConfig::SetData(const MEMORY_BLOCK *const source)
                 else
                 {
                     Logger::add_entry(E_SEVERITY::E_LOG_ALARM, "Configuration Exchange Failed");
-                    this->m_CurrentState = E_STATES_FAIL;
+                    this->m_CurrentState = E_FAIL;
                 }
 
 				// update retval to success
@@ -266,7 +266,7 @@ int PlatformConfig::SetData(const MEMORY_BLOCK *const source)
 			}
 
 			case STATES::E_SUCCESS:
-            case STATES::E_STATES_FAIL:
+			case STATES::E_FAIL:
 			{
 				// do nothing
 				retVal = 0;
