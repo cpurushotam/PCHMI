@@ -25,10 +25,10 @@ private:
     /* Q_PROPERTY for platform configuration status message for respective welder */
     Q_PROPERTY(QString StatusMsg READ getConfigWelderStatusMsg NOTIFY platformConfigStateUpdated)
 
-    QString m_StatusMsg = "No Welder Connected";                            /* To store status message */
+    QString m_StatusMsg = "No Welder Connected_1";                            /* To store status message */
 
     /* Text Strings for language change support */
-    QString m_NoConnText = "No Welder Connected";
+    QString m_NoConnText = "No Welder Connected_2";
     QString m_WelderNameText = "Welder";
     QString m_ConfigFailText = "Configuration Failed";
     QString m_ConfigWaitingText = "Waiting for configuration";

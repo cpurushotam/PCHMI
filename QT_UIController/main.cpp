@@ -104,6 +104,8 @@
 #include "SystemNetworkConfigurationNFSSetup.h"
 #include "UsbAuthDetailsListModel.h"
 
+#include "DashBoardWelderListModel.h"
+
 QQmlContext *pQmlContext;
 
 #include "CommPeerWrapper.h"
@@ -192,6 +194,10 @@ int main(int argc, char *argv[])
 
     CycleDetailTableModel m_CycleDetailtablemodel;
     pQmlContext->setContextProperty("CycleDetailtablemodel", &m_CycleDetailtablemodel);
+
+    DashBoardWelderListModel dashBoardModel;
+    engine.rootContext()->setContextProperty("dashBoardModel",&dashBoardModel);
+
 
 
     AnalyticsScreenTableViewOptions  m_AnalyticsScreenTableViewOptions;

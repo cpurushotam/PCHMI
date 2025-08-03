@@ -49,6 +49,7 @@ include_directories(Core/Logic/Back_End_Logic/Platform_Config_Upgrade)
 include_directories(Core/Logic/Back_End_Logic/Diagnostics_Screens)
 include_directories(Core/Logic/Back_End_Logic/Alarm_Screens)
 include_directories(Core/Logic/Back_End_Logic/Actuator_Setup_Screens)
+include_directories(Core/Logic/Back_End_Logic/Dashboard_Screens)
 include_directories(Core/Logic/Back_End_Logic/Date_Time_Settings_Screens)
 include_directories(Core/Logic/SC)
 include_directories(Core/Logic/Common)
@@ -521,6 +522,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(QT_UIController
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        Core/Logic/Back_End_Logic/Dashboard_Screens/CommonUtils.h Core/Logic/Back_End_Logic/Dashboard_Screens/DashBoardWelderListModel.cpp Core/Logic/Back_End_Logic/Dashboard_Screens/DashBoardWelderListModel.h
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET QT_UIController APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
